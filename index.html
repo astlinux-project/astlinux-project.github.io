@@ -1,1 +1,160 @@
-AstLinux Project Web Site
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Copyright (C) 2008-2016 Lonnie Abelbeck -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+<meta name="description" content="AstLinux Project" />
+<meta name="keywords" content="ASTERISK, ASTLINUX, UNIX, LINUX, VOIP, SIP, XMPP, ROUTER, FIREWALL" />
+<title>AstLinux Project</title>
+<link rel="stylesheet" href="common/style.css" type="text/css" />
+</head>
+<body>
+<table class="headerTable"><tr>
+<td width="140"><img src="common/logo-small.gif" width="113" height="23" alt="AstLinux Project" /></td>
+<td><h1>AstLinux Project</h1></td>
+</tr></table>
+<div id="tabs">
+<ul>
+<li><a href="index.html"><span>Home</span></a></li>
+<li><a href="https://doc.astlinux.org/userdoc:documentation" target="_blank"><span>Documentation</span></a></li>
+<li><a href="https://sourceforge.net/projects/astlinux/" target="_blank"><span>Development</span></a></li>
+<li><a href="credits.html"><span>Credits</span></a></li>
+<li><a href="about.html"><span>About</span></a></li>
+<li><a href="contact.html"><span>Contact</span></a></li>
+</ul>
+</div>
+<br /><br />
+<center>
+<p>&nbsp;</p>
+</center>
+<h2>AstLinux Release:</h2>
+<pre>
+AstLinux Release Version: 1.2.6.1 - <a href="http://svn.code.sf.net/p/astlinux/code/tags/1.2.6.1/docs/ChangeLog.txt" target="_blank">ChangeLog</a>
+
+Asterisk Versions: 1.8.32.3, 11.21.2 and 13.7.2
+
+<strong>ISO Install Images:</strong>
+Generic x86-64bit (Video Console) - <a href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.2.6.1-genx86_64.iso" target="_blank">Download</a>
+Generic x86-64bit (Serial Console) - <a href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.2.6.1-genx86_64-serial.iso" target="_blank">Download</a>
+Generic x86-32bit (Video Console) - <a href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.2.6.1-geni586.iso" target="_blank">Download</a>
+Generic x86-32bit (Serial Console) - <a href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.2.6.1-geni586-serial.iso" target="_blank">Download</a>
+PC Engines ALIX (Serial Console) - <a href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.2.6.1-alix-serial.iso" target="_blank">Download</a>
+Soekris net5501 (Serial Console) - <a href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.2.6.1-net5501-serial.iso" target="_blank">Download</a>
+</pre>
+
+<h2>Release Notes:</h2>
+<p class="dialogText">
+AstLinux 1.2.6.1 is primarily a security fix release,
+fixing vulnerabilities in eglibc (including stack-based buffer overflow CVE-2015-7547),
+added new CLI commands "htop" and "arp-scan",
+Web Interface enhancements for "staff' users, and new Asterisk versions providing important security and bug fixes.
+<br /><br />
+Note: The standard "Repository URL:" has changed from 'mirror.astlinux.org' to 'mirror.astlinux-project.org'
+<br /><br />
+Note: Dynamic DNS support is now performed using "ddclient" only, the old "inadyn" support has been removed so all service types can now have SSL update support enabled.
+</p>
+
+<h2>Description:</h2>
+<p>
+AstLinux is a "Communications and Network Appliance" open source software distribution.
+Unified communications including voice, presence and messaging, provided by Asterisk (SIP, DAHDI) and Prosody (XMPP).
+AstLinux's framework allows integrators and developers to deploy solutions that may be remotely monitored, supported and upgraded using an optimized 50 MB image.
+</p>
+<p>
+AstLinux provides a communication and networking platform including:
+</p>
+<ul class="listText">
+<li>Asterisk 1.8, 11 or 13:
+<a href="http://www.asterisk.org/" target="_blank">SIP, DAHDI</a> - 
+Voice PBX
+</li>
+<li>Asterisk Operator Panel:
+<a href="https://doc.astlinux.org/userdoc:tt_asterisk-fop2" target="_blank">FOP2</a> - 
+optional Add-On Package
+</li>
+<li>Prosody 0.9:
+<a href="https://doc.astlinux.org/userdoc:tt-xmpp-server" target="_blank">XMPP</a> - 
+Presence and Messaging
+</li>
+<li>Linux: Kernel 3.2, Busybox base with iproute2, e2fsprogs and util-linux</li>
+<li>VPN Support:
+<a href="https://doc.astlinux.org/userdoc:tt_openvpn_server" target="_blank">OpenVPN</a>
+<a href="https://doc.astlinux.org/userdoc:tt_ipsec_vpn_apple_ios" target="_blank">IPSec VPN</a>
+and PPTP
+</li>
+<li>Scripting Languages: bash, php, lua and perl</li>
+<li>Web Server: Linux-Lighttpd-SQLite3-PHP</li>
+<li>Monitoring:
+<a href="https://doc.astlinux.org/userdoc:tt_zabbix_monitoring" target="_blank">Zabbix</a>
+<a href="https://doc.astlinux.org/userdoc:tt_asterisk_snmp_monitoring" target="_blank">SNMP</a>
+<a href="https://doc.astlinux.org/userdoc:tt_ups_monitoring" target="_blank">UPS Equipment</a>
+</li>
+<li>IPv4 / IPv6 Router and
+<a href="https://doc.astlinux.org/userdoc:tt_firewall_plugins" target="_blank">Stateful Filtering Firewall</a>
+</li>
+<li><a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" target="_blank">DHCP, DNS, TFTP</a>
+<a href="https://doc.astlinux.org/userdoc:tt_dnscrypt_proxy" target="_blank">DNSCrypt Proxy</a>
+NTP and FTP servers
+</li>
+<li>SMTP email forwarding for notifications</li>
+<li><a href="https://doc.astlinux.org/userdoc:tt_fossil" target="_blank">Fossil</a> - 
+software configuration management system for local configuration files
+</li>
+<li><a href="https://doc.astlinux.org/userdoc:tt-ldap-server" target="_blank">LDAP</a> - 
+server for distributing directory information
+</li>
+<li><a href="https://doc.astlinux.org/userdoc:tt_asterisk-odbc" target="_blank">ODBC</a> - 
+database abstraction layer support for SQLite3
+</li>
+<li>RUNNIX bootloader supporting firmware version management and low level diagnostics</li>
+<li>Web interface for administration</li>
+</ul>
+<p>
+Supported x86 based platforms include:
+</p>
+<ul class="listText">
+<li><a href="http://www.pcengines.ch/" target="_blank">PC Engines</a>
+AMD APU boards:
+<a href="https://doc.astlinux.org/userdoc:board_pcengines_apu" target="_blank">apu1</a>
+<a href="https://doc.astlinux.org/userdoc:board_pcengines_apu2" target="_blank">apu2</a>
+</li>
+<li><a href="http://www.jetwaycomputer.com/" target="_blank">Jetway</a>
+Intel Dual Core Atom boards:
+<a href="https://doc.astlinux.org/userdoc:board_jetway_nf9hql-525" target="_blank">NF9HQL-525</a>
+<a href="https://doc.astlinux.org/userdoc:board_jetway_nf96fl-525" target="_blank">NF96FL-525 / NF96U-525</a>
+<a href="https://doc.astlinux.org/userdoc:board_jetway_nf99fl-525" target="_blank">NF99FL-525</a>
+</li>
+<li><a href="http://www.jetwaycomputer.com/" target="_blank">Jetway</a>
+Intel Quad Core Celeron board:
+<a href="https://doc.astlinux.org/userdoc:board_jetway_nf9hg-2930" target="_blank">NF9HG-2930</a>
+</li>
+<li><a href="http://www.jetwaycomputer.com/" target="_blank">Jetway</a>
+Intel Atom D525 fanless appliance:
+<a href="https://doc.astlinux.org/userdoc:board_jetway_jbc373f38w" target="_blank">JBC373F38W / HBJC373F38W</a>
+</li>
+<li><a href="http://www.lannerinc.com/" target="_blank">Lanner</a>
+Intel Atom fanless appliances:
+<a href="https://doc.astlinux.org/userdoc:board_lanner_fw-7541d" target="_blank">FW-7541D</a>
+<a href="https://doc.astlinux.org/userdoc:board_lanner_lec-7220-n4" target="_blank">LEC-7220-N4</a>
+</li>
+<li><a href="http://www.lannerinc.com/" target="_blank">Lanner</a>
+Intel Atom C2358 fanless appliance:
+<a href="https://doc.astlinux.org/userdoc:board_lanner_fw-7525b" target="_blank">FW-7525B</a>
+</li>
+<li><a href="http://www.vmware.com/" target="_blank">VMware</a>
+x86 Virtualization
+</li>
+<li>Generic x86 PC Hardware</li>
+</ul>
+<p>
+The following telephony hardware cards are supported via DAHDI:
+</p>
+<ul class="listText">
+<li><a href="http://www.digium.com/" target="_blank">Digium</a></li>
+<li><a href="http://www.sangoma.com/" target="_blank">Sangoma</a></li>
+<li>DAHDI compatible hardware (without extra drivers) like HFC cards</li>
+</ul>
+<p style="color: orange;">Computing resources are provided courtesy <a href="http://djhsolutions.com" target="_blank">DJH Solutions, LLC</a></p>
+</body>
+</html>

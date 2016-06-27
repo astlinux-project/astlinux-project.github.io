@@ -1,0 +1,138 @@
+/* AstLinux Web Interface */
+
+body {
+  color: #000000;
+  background: #F7F5F2;
+  font-weight: normal;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: normal;
+  text-decoration: none;
+  margin: 8px;
+  padding: 0;
+}
+
+table {
+  font-weight: normal;
+  border-color: #54545C;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+pre {
+  font-weight: normal;
+  border: 2px solid #54545C;
+  background: #E7E5E2;
+  padding: 10px;
+  font-family: "Bitstream Vera Sans Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+  font-size: 12px;
+  line-height: 125%;
+  width: inherit;
+  overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px 0px 0px 16px;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+p {
+  font-weight: normal;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#tabs {
+  float:left;
+  width:100%;
+  background:#E7E5E2;
+  font-weight: bold;
+  font-size:100%;
+  line-height:normal;
+  border-bottom:1px solid #54545C;
+}
+#tabs ul {
+  margin:0;
+  padding:10px 10px 0 50px;
+  list-style:none;
+}
+#tabs li {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+#tabs a {
+  float:left;
+  background:url("tableft.gif") no-repeat left top;
+  margin:0;
+  padding:0 0 0 4px;
+  text-decoration:none;
+}
+#tabs a span {
+  float:left;
+  display:block;
+  background:url("tabright.gif") no-repeat right top;
+  padding:5px 15px 4px 6px;
+  color: #FFA500;
+}
+#tabs a:hover span {
+  color: #FFA500;
+  background-position:100% -42px;
+}
+#tabs a:hover {
+  background-position:0% -42px;
+}
+#tabs a:hover span {
+  background-position:100% -42px;
+}
+
+.headerTable {
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 100%;
+  width: 100%;
+  border: 0;
+  text-align: left;
+}
+.headerTable td {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.dialogText {
+  font-weight: normal;
+  background: #E7E5E2;
+  padding: 10px;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.listText {
+  font-weight: normal;
+  background: #E7E5E2;
+  padding: 10px 0px 10px 40px;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: none;
+}
+
