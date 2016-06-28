@@ -62,7 +62,7 @@ p {
   width:100%;
   background:#E7E5E2;
   font-weight: bold;
-  font-size:100%;
+  font-size:110%;
   line-height:normal;
   border-bottom:1px solid #54545C;
 }
@@ -197,5 +197,17 @@ p {
   font-size: 14px;
   line-height: normal;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
+
+  #tabs {
+    font-weight: normal;
+    font-size:150%;
+  }
+
+  #tabs a {
+    padding:0 2px 0 4px;
+  }
 }
 
