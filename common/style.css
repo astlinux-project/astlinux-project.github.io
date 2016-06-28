@@ -101,6 +101,32 @@ p {
   background-position:100% -42px;
 }
 
+.status {
+  font-family: "Bitstream Vera Sans Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 110%;
+  border: 2px solid #54545C;
+  background: #E7E5E2;
+  text-align: left;
+}
+.status td {
+  padding: 8px;
+}
+
+.datatable {
+  font-family: "Bitstream Vera Sans Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 110%;
+  border: 0;
+  text-align: left;
+}
+.datatable td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 .headerTable {
   font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
   font-size: 100%;
@@ -114,6 +140,43 @@ p {
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.dtrow0 {
+  background: #F7F7F7;
+}
+.dtrow1 {
+  background: #EFEFE7;
+}
+
+.headerText {
+  color: #FFA500;
+  font-weight: bold;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: underline;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  padding-right: 12px;
+}
+.headerText:visited {
+  color: #FFA500;
+}
+.headerText:hover {
+  text-decoration: none;
+}
+.headerText:active {
+  color: black;
+}
+
+.statusText {
+  font-weight: normal;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: none;
 }
 
 .dialogText {
