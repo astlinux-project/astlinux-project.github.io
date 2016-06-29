@@ -199,26 +199,3 @@ p {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 991px) {
-
-  #tabs {
-    font-weight: normal;
-    font-size:150%;
-  }
-
-  #tabs a {
-    padding:0 1px 0 4px;
-  }
-
-  .datatable {
-    font-size:20px;
-  }
-
-  .headerText {
-    font-size:20px;
-  }
-
-  .statusText {
-    font-size:20px;
-  }
-}
