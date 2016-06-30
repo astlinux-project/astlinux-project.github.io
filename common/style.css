@@ -149,6 +149,13 @@ p {
   background: #EFEFE7;
 }
 
+.dtrow0-hideOnMobile {
+  background: #F7F7F7;
+}
+.dtrow1-hideOnMobile {
+  background: #EFEFE7;
+}
+
 .headerText {
   color: #FFA500;
   font-weight: bold;
@@ -197,5 +204,17 @@ p {
   font-size: 14px;
   line-height: normal;
   text-decoration: none;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .hideOnMobile {
+    display: none !important;
+  }
+  .dtrow0-hideOnMobile {
+    display: none !important;
+  }
+  .dtrow1-hideOnMobile {
+    display: none !important;
+  }
 }
 
