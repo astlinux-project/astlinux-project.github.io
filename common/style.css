@@ -156,6 +156,15 @@ p {
   background: #EFEFE7;
 }
 
+.dtrow0-hideOnDesktop {
+  display: none !important;
+  background: #F7F7F7;
+}
+.dtrow1-hideOnDesktop {
+  display: none !important;
+  background: #EFEFE7;
+}
+
 .headerText {
   color: #FFA500;
   font-weight: bold;
@@ -215,6 +224,12 @@ p {
   }
   .dtrow1-hideOnMobile {
     display: none !important;
+  }
+  .dtrow0-hideOnDesktop {
+    display: table-row !important;
+  }
+  .dtrow1-hideOnDesktop {
+    display: table-row !important;
   }
 }
 
