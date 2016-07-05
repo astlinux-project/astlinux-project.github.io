@@ -29,7 +29,23 @@
 <center>
 <p>&nbsp;</p>
 </center>
-<h2>About AstLinux:</h2>
+<h2>AstLinux Principles:</h2>
+<ul class="listText">
+<li>
+Minimize code bloat, only include the necessary packages and build those packages with unused features disabled.
+</li><li>
+Security and bug fixes are provided with a single firmware upgrade, not a series of entangled package upgrades. 
+</li><li>
+Firmware overlay design, upgradable-firmware image is mounted read-only while user data is overlaid read-write.
+</li><li>
+Revert-to-Previous-Firmware allows quick recovery if a firmware upgrade should ever cause an issue.
+</li><li>
+Management is performed using an HTTPS browser for common tasks, and command-line access via SSH or the console.
+</li><li>
+Custom builds are supported, allowing initial installs and firmware upgrades using a private repository.
+</li></ul>
+
+<h2>AstLinux History:</h2>
 <p class="dialogText">
 Like most open source software, AstLinux was created to fill a need.
 After discovering Asterisk&reg; in June 2004, Kristian Kielhofner became obsessed with the possibilities of a multi-protocol telephony toolkit and Linux.
@@ -55,9 +71,16 @@ It came in at just under 256 MB, and turned out to be quite useful.
 It was designed specifically for the PC Engines WRAP board.
 <br /><br />
 After several thousand downloads, many positive reviews, and further corporate sponsorship, AstLinux 0.2.0 was released in February, 2005.
-<br /><br />
+</p>
+
+<h2>AstLinux Now:</h2>
+<p class="dialogText">
 Many years later, after continuous development, the AstLinux Project has grown in features and usefulness on an almost daily basis - without growing significantly in size.
-Take a look around and see what it can do for you!
+Installed run-time images are approximately 50 MB in size.
+<br /><br />
+Beyond the fundamental Asterisk support, a Stateful Filtering Firewall, Fossil, XMPP, LDAP and ODBC are just a few of the features added since the original AstLinux release.
+<br /><br />
+Take an image for a spin and see what AstLinux can do for you!
 </p>
 <p style="color: orange;">Asterisk&reg; is a registered trademark of Digium, Inc.</p>
 </body>
