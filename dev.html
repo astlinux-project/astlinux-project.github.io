@@ -29,6 +29,44 @@
 <center>
 <p>&nbsp;</p>
 </center>
+<h2>Development Testing:</h2>
+<p class="dialogText">
+Pre-Release AstLinux run images are available for testing.
+<br />
+While these images are considered 'stable', the lack of testing will not make these images suitable for critical production systems.
+<br /><br />
+<strong>Changes:</strong>
+<a href="https://s3.amazonaws.com/beta.astlinux-project/astlinux-changelog/ChangeLog.txt" target="_blank">AstLinux Pre-Release ChangeLog</a>
+<br /><br />
+Asterisk 1.8 - Repository URL
+<br />
+https://s3.amazonaws.com/beta.astlinux-project/ast18-firmware-1.x<br />
+<br />
+Asterisk 11 - Repository URL
+<br />
+https://s3.amazonaws.com/beta.astlinux-project/ast11-firmware-1.x<br />
+<br />
+Asterisk 13 - Repository URL
+<br />
+https://s3.amazonaws.com/beta.astlinux-project/ast13-firmware-1.x<br />
+<br />
+Note: You must use an HTTP repository URL for systems older than AstLinux 1.2.7
+</p>
+<p>
+Example: Upgrade to the latest pre-release testing image containing Asterisk 11 via the CLI:
+</p>
+<pre>
+upgrade-run-image check https://s3.amazonaws.com/beta.astlinux-project/ast11-firmware-1.x
+</pre>
+<p>
+(if it looks good, then)
+</p>
+<pre>
+upgrade-run-image upgrade https://s3.amazonaws.com/beta.astlinux-project/ast11-firmware-1.x
+</pre>
+<p>
+Note: These testing images are temporary and only the most recent build will be available.
+</p>
 <h2>Development Source:</h2>
 <p class="dialogText">
 The AstLinux Project has been hosted on SourceForge since 2006 using SVN:
