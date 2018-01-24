@@ -35,44 +35,44 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">1.3.2</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.1-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-genx86_64.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2017-09-23</td>
+<td style="text-align: left;">2018-01-12</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.1-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.1/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.2/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.1-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">11.25.3, 13.17.2</td>
+<td style="text-align: left;">11.25.3, 13.18.5</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-32bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.1-geni586.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-geni586.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
@@ -84,7 +84,7 @@ Instructions</a></td>
 Generic x86-32bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.1-geni586-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-geni586-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1-hideOnDesktop">
@@ -97,35 +97,18 @@ Use a desktop browser to download an ISO Installer Image</td></tr>
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.3.1 Highlights:
+AstLinux 1.3.2 Highlights:
 </p>
 <ul class="listText">
-<li>Significant RTP security fixes added to Asterisk
+<li>Upgrade to Linux Kernel 3.16.51, including the RUNNIX bootloader
 </li>
-<li>Added Tarsnap Online Backup support, performing remote, online, "Trust No One" encrypted snapshots
+<li>Added WireGuard VPN support, an extremely simple yet fast and modern VPN
 </li>
-<li>Added DuckDNS Dynamic DNS supporting IPv4/IPv6 and acme-client DNS validation support
+<li>Command "acme-client" adds --deploy-hook "custom" which executes the script "/mnt/kd/acme-deploy-custom.script"
 </li>
-<li>Firewall reload-blocklist-netset cron script now uses new FireHOL URL's
+<li>New command "empty" with similar functionality to "expect", allows scripting interactive sessions
 </li>
 <li>Web Interface enhancements and package upgrades providing <strong>important</strong> security and bug fixes
-</li>
-</ul>
-<p>
-AstLinux 1.3.0 Highlights:
-</p>
-<ul class="listText">
-<li>Major upgrade to Linux Kernel 3.16.44, including the RUNNIX bootloader
-</li>
-<li>The default serial baud rate is now 115200 instead of the previous 19200
-</li>
-<li>New firewall "net-prefix-translation" plugin, provides NPTv6 (Network Prefix Translation) for IPv6
-</li>
-<li>Updated firewall "traffic-shaper" plugin, use fq_codel (Fair Queueing CoDel) for both 'htb' and 'hfsc' types
-</li>
-<li>New command "acme-client" to generate Let's Encrypt certificates using the ACME protocol
-</li>
-<li>Added support for VMware Tools, vmw_pvscsi and virtio-scsi disk drivers (genx86_64-vm)
 </li>
 </ul>
 <p>
@@ -137,24 +120,8 @@ AstLinux 1.2.10 was the last supported version for "net5501" and "alix" board ty
 A custom build can still be used to generate 'run' images for "net5501" and "alix" board types.
 <br /><br />
 <strong>New Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_tarsnap_online_backup" target="_blank">
-Tarsnap Online Backup</a><br />
-<br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_ipv6_ula_nptv6_config" target="_blank">
-IPv6 ULA / NPTv6 Configuration</a><br />
-<br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_acme_certificates" target="_blank">
-ACME (Let's Encrypt) Certificates</a><br />
-<br />
-<a href="https://doc.astlinux-project.org/userdoc:guest_vm_vmware_vsphere" target="_blank">
-VMware vSphere ESXi</a><br />
-<br />
-<strong>Updated Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt-dhcpv6-prefix-delegation" target="_blank">
-DHCPv6 with Prefix Delegation</a><br />
-<br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_editable_files" target="_blank">
-Editable Files</a><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_wireguard_vpn" target="_blank">
+WireGuard VPN Configuration</a><br />
 </p>
 
 <h2>Description:</h2>
@@ -181,6 +148,7 @@ Presence and Messaging
 </li>
 <li>Linux: Kernel 3.16, Busybox base with iproute2, e2fsprogs and util-linux</li>
 <li>VPN Support:
+<a href="https://doc.astlinux-project.org/userdoc:tt_wireguard_vpn" target="_blank">WireGuard</a>
 <a href="https://doc.astlinux-project.org/userdoc:tt_openvpn_server" target="_blank">OpenVPN</a>
 <a href="https://doc.astlinux-project.org/userdoc:tt_ipsec_vpn_apple_ios" target="_blank">IPSec VPN</a>
 and PPTP
