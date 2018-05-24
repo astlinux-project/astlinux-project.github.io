@@ -35,44 +35,44 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.3.2</td>
+<td style="text-align: left;">1.3.3</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-genx86_64.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2018-01-12</td>
+<td style="text-align: left;">2018-05-16</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.2/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.3/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">11.25.3, 13.18.5</td>
+<td style="text-align: left;">11.25.3, 13.20.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-32bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-geni586.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-geni586.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
@@ -84,7 +84,7 @@ Instructions</a></td>
 Generic x86-32bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.2-geni586-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-geni586-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1-hideOnDesktop">
@@ -97,16 +97,20 @@ Use a desktop browser to download an ISO Installer Image</td></tr>
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.3.2 Highlights:
+AstLinux 1.3.3 Highlights:
 </p>
 <ul class="listText">
-<li>Upgrade to Linux Kernel 3.16.51, including the RUNNIX bootloader
+<li>Upgrade to Linux Kernel 3.16.54, including the RUNNIX bootloader, security and bug fixes
 </li>
-<li>Added WireGuard VPN support, an extremely simple yet fast and modern VPN
+<li>Added DNS-TLS support, via new getdns/stubby package
 </li>
-<li>Command "acme-client" adds --deploy-hook "custom" which executes the script "/mnt/kd/acme-deploy-custom.script"
+<li>New command "system-vendor" to identify common hardware, also displayed in the web interface Status Tab
 </li>
-<li>New command "empty" with similar functionality to "expect", allows scripting interactive sessions
+<li>Zabbix upgrade adds TLS encryption support, now requires a Zabbix server with version 3.0 or greater
+</li>
+<li>Fossil package, major upgrade, adds numerous enhancements to the look and feel of the web interface Fossil tab
+</li>
+<li>util-linux package, major upgrade, providing common system commands
 </li>
 <li>Web Interface enhancements and package upgrades providing <strong>important</strong> security and bug fixes
 </li>
@@ -120,8 +124,12 @@ AstLinux 1.2.10 was the last supported version for "net5501" and "alix" board ty
 A custom build can still be used to generate 'run' images for "net5501" and "alix" board types.
 <br /><br />
 <strong>New Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_wireguard_vpn" target="_blank">
-WireGuard VPN Configuration</a><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_dns_tls_proxy" target="_blank">
+DNS-TLS Proxy Server</a><br />
+<br />
+<strong>Updated Documentation Topics:</strong><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_dnscrypt_proxy" target="_blank">
+DNSCrypt Proxy Server</a><br />
 </p>
 
 <h2>Description:</h2>
@@ -164,7 +172,7 @@ and PPTP
 <a href="https://doc.astlinux-project.org/userdoc:tt_firewall_plugins" target="_blank">Stateful Filtering Firewall</a>
 </li>
 <li><a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" target="_blank">DHCP, DNS, TFTP</a>
-<a href="https://doc.astlinux-project.org/userdoc:tt_dnscrypt_proxy" target="_blank">DNSCrypt Proxy</a>
+<a href="https://doc.astlinux-project.org/userdoc:tt_dns_tls_proxy" target="_blank">DNS-TLS Proxy</a>
 NTP and FTP servers
 </li>
 <li>SMTP email forwarding for notifications</li>
