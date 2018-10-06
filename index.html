@@ -35,44 +35,44 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.3.3</td>
+<td style="text-align: left;">1.3.4</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-genx86_64.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2018-05-16</td>
+<td style="text-align: left;">2018-10-04</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.3/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.4/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">11.25.3, 13.20.0</td>
+<td style="text-align: left;">11.25.3, 13.23.1</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-32bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-geni586.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-geni586.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
@@ -84,7 +84,7 @@ Instructions</a></td>
 Generic x86-32bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.3-geni586-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-geni586-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1-hideOnDesktop">
@@ -97,22 +97,24 @@ Use a desktop browser to download an ISO Installer Image</td></tr>
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.3.3 Highlights:
+AstLinux 1.3.4 Highlights:
 </p>
 <ul class="listText">
-<li>Upgrade to Linux Kernel 3.16.54, including the RUNNIX bootloader, security and bug fixes
+<li>Upgrade to Linux Kernel 3.16.57, including the RUNNIX bootloader, security and bug fixes
 </li>
-<li>Added DNS-TLS support, via new getdns/stubby package
+<li>genx86_64-vm board type, add support for virtio-blk as a bootable disk driver, also added to RUNNIX
 </li>
-<li>New command "system-vendor" to identify common hardware, also displayed in the web interface Status Tab
+<li>genx86_64-vm board type, add support for QEMU Guest Agent "qemu-ga"
 </li>
-<li>Zabbix upgrade adds TLS encryption support, now requires a Zabbix server with version 3.0 or greater
+<li>rng-tools, new package, Random Number Generator daemon "rngd", enabled by default
 </li>
-<li>Fossil package, major upgrade, adds numerous enhancements to the look and feel of the web interface Fossil tab
+<li>keepalived, new package, VRRP High Availability daemon "keepalived"
 </li>
-<li>util-linux package, major upgrade, providing common system commands
+<li>msmtpd, added SMTP localhost daemon to forward 127.0.0.1:25 to "sendmail", enabled by default
 </li>
-<li>Web Interface enhancements and package upgrades providing <strong>important</strong> security and bug fixes
+<li>WireGuard VPN, latest development snapshots during its incorporation into the Linux Kernel
+</li>
+<li>Package upgrades providing <strong>important</strong> security and bug fixes
 </li>
 </ul>
 <p>
@@ -124,12 +126,21 @@ AstLinux 1.2.10 was the last supported version for "net5501" and "alix" board ty
 A custom build can still be used to generate 'run' images for "net5501" and "alix" board types.
 <br /><br />
 <strong>New Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_dns_tls_proxy" target="_blank">
-DNS-TLS Proxy Server</a><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_high_availability" target="_blank">
+VRRP High Availability Daemon (keepalived)</a><br />
+<br />
+<a href="https://doc.astlinux-project.org/userdoc:hosted_guest_vm_linode" target="_blank">
+Linode KVM (Hosted Guest)</a><br />
+<br />
+<a href="https://doc.astlinux-project.org/userdoc:hosted_guest_vm_vultr" target="_blank">
+Vultr KVM (Hosted Guest)</a><br />
 <br />
 <strong>Updated Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_dnscrypt_proxy" target="_blank">
-DNSCrypt Proxy Server</a><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_wan_failover#example4g_lte_modem_failover" target="_blank">
+WAN Failover</a><br />
+<br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_tarsnap_online_backup#restore_to_a_new_install" target="_blank">
+Tarsnap Online Backup</a><br />
 </p>
 
 <h2>Description:</h2>
@@ -150,7 +161,7 @@ Voice PBX
 <a href="https://doc.astlinux-project.org/userdoc:tt_asterisk-fop2" target="_blank">FOP2</a> - 
 optional Add-On Package
 </li>
-<li>Prosody 0.9:
+<li>Prosody 0.10:
 <a href="https://doc.astlinux-project.org/userdoc:tt-xmpp-server" target="_blank">XMPP</a> - 
 Presence and Messaging
 </li>
@@ -246,6 +257,10 @@ KVM x86_64 Virtualization:
 <li><a href="https://www.linode.com/" target="_blank">Linode</a>
 Hosted KVM x86_64 Virtualization:
 <a href="https://doc.astlinux-project.org/userdoc:hosted_guest_vm_linode" target="_blank">Linode KVM</a>
+</li>
+<li><a href="https://www.vultr.com/" target="_blank">Vultr</a>
+Hosted KVM x86_64 Virtualization:
+<a href="https://doc.astlinux-project.org/userdoc:hosted_guest_vm_vultr" target="_blank">Vultr KVM</a>
 </li>
 <li>Other x86_64 Virtualization:
 <a href="https://doc.astlinux-project.org/userdoc:guest_vm_hyperv" target="_blank">Hyper-V</a>
