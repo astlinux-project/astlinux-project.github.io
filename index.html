@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Copyright (C) 2008-2017 Lonnie Abelbeck -->
+<!-- Copyright (C) 2008-2019 Lonnie Abelbeck -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="AstLinux Project" />
-<meta name="keywords" content="ASTERISK, ASTLINUX, UNIX, LINUX, VOIP, SIP, XMPP, ROUTER, FIREWALL" />
+<meta name="keywords" content="ASTERISK, ASTLINUX, VOIP, SIP, XMPP, VPN, OPENVPN, WIREGUARD, ROUTER, FIREWALL" />
 <title>AstLinux Project</title>
 <link rel="stylesheet" href="common/style.css" type="text/css" />
 </head>
@@ -35,44 +35,44 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.3.4</td>
+<td style="text-align: left;">1.3.5.2</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-genx86_64.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2018-10-04</td>
+<td style="text-align: left;">2019-02-19</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.4/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.5.2/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">11.25.3, 13.23.1</td>
+<td style="text-align: left;">11.25.3, 13.24.1</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-32bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-geni586.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-geni586.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
@@ -84,7 +84,7 @@ Instructions</a></td>
 Generic x86-32bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.4-geni586-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-geni586-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1-hideOnDesktop">
@@ -97,22 +97,20 @@ Use a desktop browser to download an ISO Installer Image</td></tr>
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.3.4 Highlights:
+AstLinux 1.3.5.2 Highlights:
 </p>
 <ul class="listText">
-<li>Upgrade to Linux Kernel 3.16.57, including the RUNNIX bootloader, security and bug fixes
+<li>Upgrade to Linux Kernel 3.16.61, including the RUNNIX bootloader, security and bug fixes
 </li>
-<li>genx86_64-vm board type, add support for virtio-blk as a bootable disk driver, also added to RUNNIX
+<li>wol-host, new command to send Wake-on-LAN packet to specified host, by IP or DNS name
 </li>
-<li>genx86_64-vm board type, add support for QEMU Guest Agent "qemu-ga"
+<li>fossil, new feature to optionally send commit notifications via email while using "fossil-commit"
 </li>
-<li>rng-tools, new package, Random Number Generator daemon "rngd", enabled by default
+<li>WireGuard VPN, latest development snapshot during its incorporation into the mainline Linux Kernel
 </li>
-<li>keepalived, new package, VRRP High Availability daemon "keepalived"
+<li>Web Interface, WireGuard VPN sub-tab, add "Mobile Client Defaults" and "Mobile Client Credentials" sections
 </li>
-<li>msmtpd, added SMTP localhost daemon to forward 127.0.0.1:25 to "sendmail", enabled by default
-</li>
-<li>WireGuard VPN, latest development snapshots during its incorporation into the Linux Kernel
+<li>Web Interface, Status tab, improve layout of "WireGuard VPN Status" section
 </li>
 <li>Package upgrades providing <strong>important</strong> security and bug fixes
 </li>
@@ -126,26 +124,17 @@ AstLinux 1.2.10 was the last supported version for "net5501" and "alix" board ty
 A custom build can still be used to generate 'run' images for "net5501" and "alix" board types.
 <br /><br />
 <strong>New Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_high_availability" target="_blank">
-VRRP High Availability Daemon (keepalived)</a><br />
-<br />
-<a href="https://doc.astlinux-project.org/userdoc:hosted_guest_vm_linode" target="_blank">
-Linode KVM (Hosted Guest)</a><br />
-<br />
-<a href="https://doc.astlinux-project.org/userdoc:hosted_guest_vm_vultr" target="_blank">
-Vultr KVM (Hosted Guest)</a><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_edgerouter-x" target="_blank">
+EdgeRouter-X VPN Endpoint</a><br />
 <br />
 <strong>Updated Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_wan_failover#example4g_lte_modem_failover" target="_blank">
-WAN Failover</a><br />
-<br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_tarsnap_online_backup#restore_to_a_new_install" target="_blank">
-Tarsnap Online Backup</a><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_wireguard_vpn" target="_blank">
+WireGuard VPN Configuration</a><br />
 </p>
 
 <h2>Description:</h2>
 <p>
-AstLinux is a "Communications and Network Appliance" open-source software distribution.
+AstLinux is a "Network Appliance for Communications" open-source software distribution.
 Unified communications including voice, presence and messaging, provided by Asterisk (SIP, DAHDI) and Prosody (XMPP).
 AstLinux's framework allows integrators and developers to deploy solutions that may be remotely monitored, supported and upgraded using an optimized 50 MB image.
 </p>
