@@ -35,44 +35,44 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.3.5.2</td>
+<td style="text-align: left;">1.3.6</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-genx86_64.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2019-02-19</td>
+<td style="text-align: left;">2019-07-02</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.5.2/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.6/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">11.25.3, 13.24.1</td>
+<td style="text-align: left;">13.23.1, 13.27.0, 16.4.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-32bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-geni586.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-geni586.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
@@ -84,7 +84,7 @@ Instructions</a></td>
 Generic x86-32bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.5.2-geni586-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-geni586-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1-hideOnDesktop">
@@ -97,20 +97,28 @@ Use a desktop browser to download an ISO Installer Image</td></tr>
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.3.5.2 Highlights:
+AstLinux 1.3.6 Highlights:
 </p>
 <ul class="listText">
-<li>Upgrade to Linux Kernel 3.16.61, including the RUNNIX bootloader, security and bug fixes
+<li>Upgrade to Linux Kernel 3.16.69, including the RUNNIX bootloader, security and bug fixes
 </li>
-<li>wol-host, new command to send Wake-on-LAN packet to specified host, by IP or DNS name
+<li>busybox, <strong>major</strong> version bump to 1.30.1, security and bug fixes
 </li>
-<li>fossil, new feature to optionally send commit notifications via email while using "fossil-commit"
+<li>ne, new package, version 3.1.2, the nice editor, alternative to nano, including syntax highlighting
+</li>
+<li>Asterisk 11.x is no longer included, officially EOL 2017-10-25
+</li>
+<li>Asterisk '13se' (stable edition) version 13.23.1 is included, older than latest Asterisk 13.x version but more tested, built --without-pjproject
+</li>
+<li>Asterisk 16.x is now included in the Install ISO and "ast16-firmware-1.x" repository
+</li>
+<li>Asterisk CDR's, when a Dial() has a B() option 'Return(IgnoreNoAnswerCDR)' ignore unanswered events
 </li>
 <li>WireGuard VPN, latest development snapshot during its incorporation into the mainline Linux Kernel
 </li>
-<li>Web Interface, WireGuard VPN sub-tab, add "Mobile Client Defaults" and "Mobile Client Credentials" sections
+<li>Web Interface, Network, Edit tabs, add "Reload WireGuard VPN" support to apply peer changes/additions/deletions
 </li>
-<li>Web Interface, Status tab, improve layout of "WireGuard VPN Status" section
+<li>Web Interface, Status tab, add "ChangeLog" link to display changes since AstLinux 1.2.0 using local file storage
 </li>
 <li>Package upgrades providing <strong>important</strong> security and bug fixes
 </li>
@@ -118,18 +126,21 @@ AstLinux 1.3.5.2 Highlights:
 <p>
 All users are encouraged to upgrade.
 </p>
+<p>
+Previous Asterisk 11.x users are encouraged to switch to the new Asterisk '13se' (stable edition).
+Some configuration changes will be needed, though minimal.
+</p>
 <p class="dialogText">
 <strong>IMPORTANT NOTICE:</strong><br />
 AstLinux 1.2.10 was the last supported version for "net5501" and "alix" board types.
 A custom build can still be used to generate 'run' images for "net5501" and "alix" board types.
 <br /><br />
-<strong>New Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_edgerouter-x" target="_blank">
-EdgeRouter-X VPN Endpoint</a><br />
-<br />
 <strong>Updated Documentation Topics:</strong><br />
 <a href="https://doc.astlinux-project.org/userdoc:tt_wireguard_vpn" target="_blank">
 WireGuard VPN Configuration</a><br />
+<br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
+Asterisk LTS Series Version</a><br />
 </p>
 
 <h2>Description:</h2>
@@ -142,7 +153,7 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 AstLinux provides a communication and networking platform including:
 </p>
 <ul class="listText">
-<li>Asterisk 11 or 13:
+<li>Asterisk 13 or 16:
 <a href="http://www.asterisk.org/" target="_blank">SIP, DAHDI</a> - 
 Voice PBX
 </li>
@@ -202,33 +213,21 @@ Intel Core i3-6100U fanless appliance:
 </li>
 <li><a href="http://www.pcengines.ch/" target="_blank">PC Engines</a>
 AMD APU boards:
-<a href="https://doc.astlinux-project.org/userdoc:board_pcengines_apu" target="_blank">apu1</a>
 <a href="https://doc.astlinux-project.org/userdoc:board_pcengines_apu2" target="_blank">apu2</a>
-</li>
-<li><a href="http://www.jetwaycomputer.com/" target="_blank">Jetway</a>
-Intel Dual Core Atom boards:
-<a href="https://doc.astlinux-project.org/userdoc:board_jetway_nf9hql-525" target="_blank">NF9HQL-525</a>
-<a href="https://doc.astlinux-project.org/userdoc:board_jetway_nf96fl-525" target="_blank">NF96FL-525 / NF96U-525</a>
-<a href="https://doc.astlinux-project.org/userdoc:board_jetway_nf99fl-525" target="_blank">NF99FL-525</a>
 </li>
 <li><a href="http://www.jetwaycomputer.com/" target="_blank">Jetway</a>
 Intel Quad Core Celeron board:
 <a href="https://doc.astlinux-project.org/userdoc:board_jetway_nf9hg-2930" target="_blank">NF9HG-2930</a>
 </li>
-<li><a href="http://www.jetwaycomputer.com/" target="_blank">Jetway</a>
-Intel Atom D525 fanless appliance:
-<a href="https://doc.astlinux-project.org/userdoc:board_jetway_jbc373f38w" target="_blank">JBC373F38W / HBJC373F38W</a>
-</li>
-<li><a href="http://www.lannerinc.com/" target="_blank">Lanner</a>
-Intel Atom fanless appliances:
-<a href="https://doc.astlinux-project.org/userdoc:board_lanner_fw-7541d" target="_blank">FW-7541D</a>
-<a href="https://doc.astlinux-project.org/userdoc:board_lanner_lec-7220-n4" target="_blank">LEC-7220-N4</a>
-</li>
 <li><a href="http://www.lannerinc.com/" target="_blank">Lanner</a>
 Intel Atom C2358 fanless appliance:
 <a href="https://doc.astlinux-project.org/userdoc:board_lanner_fw-7525b" target="_blank">FW-7525B</a>
 </li>
-<li>Generic x86 PC Hardware</li>
+<li><a href="https://www.hpe.com/" target="_blank">HP Enterprise</a>
+AMD X3421 ProLiant:
+<a href="https://doc.astlinux-project.org/userdoc:board_hpe_microserver_x3421" target="_blank">MicroServer Gen10</a>
+</li>
+<li>Generic x86 PC Hardware with Legacy (non-UEFI) BIOS</li>
 </ul>
 <p>
 Supported Virtual Machine guest environments include:
@@ -262,7 +261,6 @@ The following telephony hardware cards are supported via DAHDI:
 </p>
 <ul class="listText">
 <li><a href="http://www.digium.com/" target="_blank">Digium</a></li>
-<li><a href="http://www.sangoma.com/" target="_blank">Sangoma (via custom build)</a></li>
 <li>DAHDI compatible hardware (without extra drivers) like HFC cards</li>
 </ul>
 <p style="color: orange;">Computing resources are provided courtesy <a href="https://www.technosis.biz/" target="_blank">TechNosis, Inc.</a></p>
