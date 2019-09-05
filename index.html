@@ -264,5 +264,27 @@ The following telephony hardware cards are supported via DAHDI:
 <li>DAHDI compatible hardware (without extra drivers) like HFC cards</li>
 </ul>
 <p style="color: orange;">Computing resources are provided courtesy <a href="https://www.technosis.biz/" target="_blank">TechNosis, Inc.</a></p>
+<button onclick="gototop_action()" id="gttBtn" title="Goto Top">&uarr;</button>
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+// When the user clicks on the button, scroll to the top of the document
+function gototop_action() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function set_gototop_scroll() {
+  if (document.body.scrollTop > 48 || document.documentElement.scrollTop > 48) {
+    document.getElementById("gttBtn").style.display = "block";
+  } else {
+    document.getElementById("gttBtn").style.display = "none";
+  }
+}
+function setGTThandler() {
+  set_gototop_scroll();
+  window.onscroll = set_gototop_scroll;
+}
+setGTThandler();
+//]]>
+</script>
 </body>
 </html>
