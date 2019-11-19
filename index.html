@@ -35,44 +35,44 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.3.6</td>
+<td style="text-align: left;">1.3.7</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7-genx86_64.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2019-07-02</td>
+<td style="text-align: left;">2019-11-05</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.6/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.7/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.23.1, 13.27.0, 16.4.0</td>
+<td style="text-align: left;">13.23.1, 13.29.1, 16.6.1</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-32bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-geni586.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7-geni586.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow0">
@@ -84,7 +84,7 @@ Instructions</a></td>
 Generic x86-32bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.6-geni586-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7-geni586-serial.iso" target="_blank">
 Download Install ISO</a></div></td></tr>
 
 <tr class="dtrow1-hideOnDesktop">
@@ -97,50 +97,68 @@ Use a desktop browser to download an ISO Installer Image</td></tr>
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.3.6 Highlights:
+AstLinux 1.3.7 Highlights:
 </p>
 <ul class="listText">
-<li>Upgrade to Linux Kernel 3.16.69, including the RUNNIX bootloader, security and bug fixes
+<li>Upgrade to Linux Kernel 3.16.74, including the RUNNIX bootloader, security and bug fixes
 </li>
-<li>busybox, <strong>major</strong> version bump to 1.30.1, security and bug fixes
+<li>OpenSSL, <strong>major</strong> version bump to 1.1.1d, the new LTS series.
+The previous 1.0.2 LTS series is EOL at the end of 2019
+<br />Note: Many packages required version bumps or patches to be compatible with the new OpenSSL 1.1 API
 </li>
-<li>ne, new package, version 3.1.2, the nice editor, alternative to nano, including syntax highlighting
+<li>acme-client, add upstream patch from 2.8.3 to fix (important) Let's Encrypt CDN changes
 </li>
-<li>Asterisk 11.x is no longer included, officially EOL 2017-10-25
+<li>php, major version bump to 7.2.23, adds OpenSSL 1.1 compatibility
 </li>
-<li>Asterisk '13se' (stable edition) version 13.23.1 is included, older than latest Asterisk 13.x version but more tested, built --without-pjproject
+<li>Web Interface Edit tab, add support for CodeMirror text editing
 </li>
-<li>Asterisk 16.x is now included in the Install ISO and "ast16-firmware-1.x" repository
+<li>Fossil, major version bump to 2.9, adds numerous enhancements to the look and feel of the web interface
 </li>
-<li>Asterisk CDR's, when a Dial() has a B() option 'Return(IgnoreNoAnswerCDR)' ignore unanswered events
+<li>iprange, new command, version 1.0.4, a tool capable of managing sets of IPs
+</li>
+<li>arnofw (AIF), reload-blocklist-netset cron script, add new netset types
+</li>
+<li>arnofw (AIF), wireguard-vpn plugin, add support for WG->Local TCP/UDP INPUT policy firewall rules
 </li>
 <li>WireGuard VPN, latest development snapshot during its incorporation into the mainline Linux Kernel
 </li>
-<li>Web Interface, Network, Edit tabs, add "Reload WireGuard VPN" support to apply peer changes/additions/deletions
-</li>
-<li>Web Interface, Status tab, add "ChangeLog" link to display changes since AstLinux 1.2.0 using local file storage
+<li>Asterisk '13se' (stable edition) version 13.23.1 is older than latest Asterisk 13.x version but more tested,
+built --without-pjproject
 </li>
 <li>Package upgrades providing <strong>important</strong> security and bug fixes
 </li>
 </ul>
 <p>
-All users are encouraged to upgrade.
+All users are encouraged to upgrade. ACME (Let's Encrypt) users <strong>must</strong> upgrade.
 </p>
 <p>
 Previous Asterisk 11.x users are encouraged to switch to the new Asterisk '13se' (stable edition).
 Some configuration changes will be needed, though minimal.
 </p>
 <p class="dialogText">
-<strong>IMPORTANT NOTICE:</strong><br />
-AstLinux 1.2.10 was the last supported version for "net5501" and "alix" board types.
-A custom build can still be used to generate 'run' images for "net5501" and "alix" board types.
-<br /><br />
+<strong>New Documentation Topics:</strong><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_web_interface_edit_codemirror_key_map" target="_blank">
+Edit tab w/CodeMirror Keyboard Mapping</a><br />
+<br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_web_interface_wiki" target="_blank">
+AstLinux integrated Wiki</a><br />
+<br />
 <strong>Updated Documentation Topics:</strong><br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_wireguard_vpn" target="_blank">
+<a href="https://doc.astlinux-project.org/userdoc:tt_firewall_external_block_list#updating_netset_blocklists" target="_blank">
+Firewall External Block List</a><br />
+<br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_wireguard_vpn#wireguard_configuration_options" target="_blank">
 WireGuard VPN Configuration</a><br />
 <br />
-<a href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
-Asterisk LTS Series Version</a><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_wan_failover#exit_action_script_optional" target="_blank">
+WAN Failover</a><br />
+<br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_web_interface_font" target="_blank">
+Web Interface Display Font</a><br />
+<br />
+<strong>Note:</strong><br />
+AstLinux 1.2.10 was the last supported version for "net5501" and "alix" board types.
+A custom build can still be used to generate 'run' images for "net5501" and "alix" board types.
 </p>
 
 <h2>Description:</h2>
