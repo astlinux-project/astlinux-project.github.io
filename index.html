@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Copyright (C) 2008-2019 Lonnie Abelbeck -->
+<!-- Copyright (C) 2008-2020 Lonnie Abelbeck -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,7 +41,9 @@ Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
 <a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7.1-genx86_64.iso" target="_blank">
-Download Install ISO</a></div></td></tr>
+Download Install ISO</a>
+<a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
+SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
@@ -51,7 +53,9 @@ Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
 <a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7.1-genx86_64-serial.iso" target="_blank">
-Download Install ISO</a></div></td></tr>
+Download Install ISO</a>
+<a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
+SHA256</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
@@ -63,7 +67,9 @@ Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
 <a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7.1-genx86_64-vm.iso" target="_blank">
-Download Install ISO</a></div></td></tr>
+Download Install ISO</a>
+<a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
+SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
@@ -73,7 +79,9 @@ Generic x86-32bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
 <a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7.1-geni586.iso" target="_blank">
-Download Install ISO</a></div></td></tr>
+Download Install ISO</a>
+<a class="headerText" href="" onclick="return showSHA256iso('geni586');">
+SHA256</a></div></td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">New Installation:</td>
@@ -85,7 +93,9 @@ Generic x86-32bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
 <a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.7.1-geni586-serial.iso" target="_blank">
-Download Install ISO</a></div></td></tr>
+Download Install ISO</a>
+<a class="headerText" href="" onclick="return showSHA256iso('geni586-serial');">
+SHA256</a></div></td></tr>
 
 <tr class="dtrow1-hideOnDesktop">
 <td class="statusText" style="text-align: right; font-weight: bold;">Download:</td>
@@ -314,6 +324,34 @@ function setGTThandler() {
   window.onscroll = set_gototop_scroll;
 }
 setGTThandler();
+// Load iso.sha256.txt file and support parsing it
+var isosha256txt;
+function loadISOsha256file() {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      isosha256txt = this.responseText;
+    }
+  };
+  xhr.open("GET", "iso.sha256.txt");
+  xhr.send();
+}
+loadISOsha256file();
+function showSHA256iso(type) {
+  if (typeof isosha256txt != 'string') {
+    return false;
+  }
+  var msg;
+  var regex = new RegExp('([0-9a-fA-F]+) +(.*)' + type + '[.]iso');
+  var result = isosha256txt.match(regex);
+  if (result === null) {
+    msg = 'No match';
+  } else {
+    msg = 'SHA256 for ' + result[2] + type + ' ISO:\n\n' + result[1];
+  }
+  alert(msg);
+  return true;
+}
 //]]>
 </script>
 </body>
