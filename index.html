@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.3.10</td>
+<td style="text-align: left;">1.4.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.10-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.0-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2020-07-25</td>
+<td style="text-align: left;">2020-10-05</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.3.10/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.0/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.10-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.0-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.29.2, 13.34.0, 16.11.1</td>
+<td style="text-align: left;">13.29.2, 13.36.0, 16.13.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.3.10-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.0-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -108,6 +108,44 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 </p>
 
 <h2>Release Notes:</h2>
+<p>
+AstLinux 1.4.0 Highlights:
+</p>
+<ul class="listText">
+<li>Linux Kernel 4.19.146, major bump from 3.16.x series
+</li>
+<li>RUNNIX, version bump to runnix-0.6.2, with Linux Kernel 4.19.146, e2fsprogs 1.45.6, util-linux 2.33.2
+</li>
+<li>WireGuard VPN, version bump, module 1.0.20200908, tools 1.0.20200827
+</li>
+<li>iproute2 (ip, tc, bridge, etc.) version bump to 4.20.0
+</li>
+<li>iptables, version bump to 1.8.4
+</li>
+<li>Fossil, version bump to 2.10.2, security fixes
+</li>
+<li>acme-client, version 2.8.7, add email notify support
+</li>
+<li>dnsmasq, version bump to 2.82, performance improvements and bug fixes
+</li>
+<li>util-linux, version bump to 2.33.2, add 'nsenter' command
+</li>
+<li>zabbix, version bump to 4.0.24
+</li>
+<li>Asterisk '13se' (stable edition) version 13.29.2 is older than latest Asterisk 13.x version but more tested,
+built --without-pjproject
+</li>
+<li>pjsip, version bump to 2.10
+</li>
+<li>DAHDI, version bump to dahdi-linux 3.1.0 and dahdi-tools 3.1.0, required to support the new kernel
+<br />Previous DAHDI_HFCS and RHINO drivers are no longer supported
+<br />Add patch to return DAHDI support for (wctdm24xxp) TDM800P/AEX800 and TDM410P/AEX410 PCI cards
+<br />Add patch to return DAHDI support for (wctdm) TDM400P PCI cards
+<br />Add patch to return DAHDI support for (wcfxo) X100P PCI cards
+</li>
+<li>Package upgrades providing <strong>important</strong> security and bug fixes
+</li>
+</ul>
 <p>
 AstLinux 1.3.10 Highlights:
 </p>
@@ -163,6 +201,9 @@ Firewall Overview</a>
 Protectli FW4B Quad Core Fanless Celeron J3160</a>
 <br /><br />
 <strong>Updated Documentation Topics:</strong><br />
+<a href="https://doc.astlinux-project.org/userdoc:tt_acme_certificates" target="_blank">
+ACME (Let's Encrypt) Certificates</a>
+<br /><br />
 <a href="https://doc.astlinux-project.org/userdoc:tt_dns_tls_proxy" target="_blank">
 DNS-TLS Proxy Server</a>
 <br /><br />
@@ -289,8 +330,8 @@ Hosted KVM x86_64 Virtualization:
 The following telephony hardware cards are supported via DAHDI:
 </p>
 <ul class="listText">
-<li><a href="https://www.digium.com/" target="_blank">Digium</a></li>
-<li>DAHDI compatible hardware (without extra drivers) like HFC cards</li>
+<li><a href="https://www.sangoma.com/telephony-cards/" target="_blank">DAHDI Telephony Cards</a></li>
+<li>DAHDI 3.x compatible hardware</li>
 </ul>
 <p style="color: orange;">Computing resources are provided courtesy <a href="https://www.technosis.biz/" target="_blank">TechNosis, Inc.</a></p>
 <button onclick="gototop_action()" id="gttBtn" title="Goto Top">&uarr;</button>
