@@ -208,6 +208,31 @@ p {
   color: black;
 }
 
+.linkText {
+  color: #CC8500;
+  font-weight: normal;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: underline;
+  border-radius: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.linkText:visited {
+  color: #CC8500;
+}
+.linkText:hover {
+  color: #FFA500;
+  text-decoration: none;
+  background-color: #534e46;
+}
+.linkText:active {
+  color: black;
+}
+
 .statusText {
   font-weight: normal;
   font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
