@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.4.2</td>
+<td style="text-align: left;">1.4.3</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.2-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.3-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2021-03-10</td>
+<td style="text-align: left;">2021-07-11</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.2/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.3/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.2-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.3-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.29.2, 13.38.2, 16.16.2</td>
+<td style="text-align: left;">13.29.2, 13.38.2, 16.19.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.2-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.3-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -109,36 +109,38 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.4.2 Highlights:
+AstLinux 1.4.3 Highlights:
 </p>
 <ul class="listText">
-<li>Linux Kernel 4.19.177, security and bug fixes
+<li>Linux Kernel 4.19.196, security and bug fixes
 </li>
-<li>ipsec-tools (racoon) package has been removed.
+<li>RUNNIX, version bump to runnix-0.6.4
 </li>
-<li>OpenSSL, version bump to 1.1.1j, security fixes
+<li>OpenSSL, version bump to 1.1.1k, security fixes
 </li>
-<li>OpenVPN, version bump to 2.4.10
+<li>OpenVPN, version bump to 2.4.11
 </li>
-<li>WireGuard VPN, module 1.0.20210219 (version bump), tools 1.0.20210223 (version bump)
+<li>WireGuard VPN, module 1.0.20210606 (version bump), tools 1.0.20210424 (version bump)
 </li>
-<li>dnsmasq, version 2.84, patch: upstream DNS retries regression fix
+<li>libcurl (curl) version bump to 7.77.0
 </li>
-<li>unbound, version bump to 1.13.1
+<li>libxml2, version bump to 2.9.12
 </li>
-<li>sudo, version bump to 1.8.32, security fixes
+<li>LibreTLS, new package, version 3.3.3p1, a port of libtls from LibreSSL to OpenSSL
 </li>
-<li>zabbix, version bump to 4.0.29
+<li>chrony, version bump to 4.1
 </li>
-<li>vnStat, new package, version 2.6, interface counter history is saved to /mnt/kd/vnstat/vnstat.db every hour.
-<br />Enabled by default to keep a log of network traffic for external interface(s). No sniffing of traffic is performed.
-<br />New rc.conf variable VNSTAT_ENABLE can be set to "no" to disable.
+<li>Monit, version bump to 5.28.0
 </li>
-<li>Web Interface, added vnStat tab, available to "admin/staff" users.  Hidden by default in Prefs tab.
+<li>msmtp, version bump to 1.8.15, switch TLS support to libtls (LibreTLS via OpenSSL)
 </li>
-<li>All Asterisk versions now have sRTP replay protection, new rtp.conf config option: srtpreplayprotection=yes
-<br />This new rtp.conf option is enabled by default.
-<br />Buggy SIP user agents may require srtpreplayprotection=no if audio issues occur with sRTP streams.
+<li>prosody, major version bump to 0.11.9
+</li>
+<li>vnStat, version bump to 2.7
+</li>
+<li>zabbix, version bump to 4.0.31
+</li>
+<li>phoneprov-tools, add support for @CID_NUM@ and @CID_NUM1@ to @CID_NUM6@ template variables.
 </li>
 <li>Asterisk '13se' (stable edition) version 13.29.2 is older than latest Asterisk 13.x version but more tested,
 built --without-pjproject
@@ -160,6 +162,9 @@ albeit in a less than ideal text based configuration.
 <strong>Updated Documentation Topics:</strong><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_ipsec_vpn_strongswan" target="_blank">
 IPsec VPN (strongSwan) Configuration</a>
+<br /><br />
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_ip_phone_provisioning#phone_template_syntax" target="_blank">
+IP Phone Mass Deployment (Merged Template variables)</a>
 </p>
 
 <h2>Details:</h2>
@@ -175,7 +180,7 @@ Voice PBX
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk-fop2" target="_blank">FOP2</a> - 
 optional Add-On Package
 </li>
-<li>Prosody 0.10:
+<li>Prosody 0.11:
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt-xmpp-server" target="_blank">XMPP</a> - 
 Presence and Messaging
 </li>
