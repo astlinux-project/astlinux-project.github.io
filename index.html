@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.4.3</td>
+<td style="text-align: left;">1.4.4</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.3-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.4-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2021-07-11</td>
+<td style="text-align: left;">2021-11-01</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.3/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.4/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.3-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.4-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.29.2, 13.38.2, 16.19.0</td>
+<td style="text-align: left;">13.38.3, 16.21.1</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.3-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://s3.amazonaws.com/mirror.astlinux-project/downloads/iso/astlinux-1.4.4-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -109,62 +109,66 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.4.3 Highlights:
+AstLinux 1.4.4 Highlights:
 </p>
+<ul class="listText" style="list-style-type:square">
+<li>Added SIP threats blocklist 'apiban', requires an API Key in /mnt/kd/apiban.conf via https://apiban.org/
+</li>
+<li>Traffic Shaping, add CAKE support, both "Network -> Firewall -> Traffic Shaping" and "Network -> WAN Failover"
+</li>
+<li>2.5G ethernet support for Intel i225 (igc) and Realtek RTL8125 (r8125) NICs
+</li>
+<li>'13se' version now uses Asterisk 13.38.3, "Security Fixes Only" version for Asterisk 13
+</li>
+</ul>
 <ul class="listText">
-<li>Linux Kernel 4.19.196, security and bug fixes
+<li>Linux Kernel 4.19.208, security and bug fixes
 </li>
-<li>RUNNIX, version bump to runnix-0.6.4
+<li>RUNNIX, version bump to runnix-0.6.5
 </li>
-<li>OpenSSL, version bump to 1.1.1k, security fixes
+<li>OpenSSL, version bump to 1.1.1l, security fixes
 </li>
-<li>OpenVPN, version bump to 2.4.11
+<li>LibreTLS, version bump to 3.4.1
 </li>
-<li>WireGuard VPN, module 1.0.20210606 (version bump), tools 1.0.20210424 (version bump)
+<li>WireGuard VPN, module 1.0.20210606 (no change), tools 1.0.20210914 (version bump)
 </li>
-<li>libcurl (curl) version bump to 7.77.0
+<li>libcurl (curl) version bump to 7.79.1
 </li>
-<li>libxml2, version bump to 2.9.12
+<li>arnofw (AIF), reload-blocklist-netset script, add support for 'apiban'
 </li>
-<li>LibreTLS, new package, version 3.3.3p1, a port of libtls from LibreSSL to OpenSSL
+<li>acme-client, version bump to 2.9.0
 </li>
-<li>chrony, version bump to 4.1
+<li>Monit, version bump to 5.29.0
 </li>
-<li>Monit, version bump to 5.28.0
+<li>prosody, version bump to 0.11.10
 </li>
-<li>msmtp, version bump to 1.8.15, switch TLS support to libtls (LibreTLS via OpenSSL)
+<li>vnStat, version bump to 2.8
 </li>
-<li>prosody, major version bump to 0.11.9
+<li>zabbix, version bump to 4.0.35
 </li>
-<li>vnStat, version bump to 2.7
-</li>
-<li>zabbix, version bump to 4.0.31
-</li>
-<li>phoneprov-tools, add support for @CID_NUM@ and @CID_NUM1@ to @CID_NUM6@ template variables.
-</li>
-<li>Asterisk '13se' (stable edition) version 13.29.2 is older than latest Asterisk 13.x version but more tested,
+<li>Asterisk '13se' (stable edition) version 13.38.3 is the latest Asterisk 13.x "Security Fixes Only" version,
 built --without-pjproject
 </li>
 <li>Package upgrades providing <strong>important</strong> security and bug fixes
 </li>
 </ul>
 <p>
-All users are encouraged to upgrade, read the ChangeLog for the details.
+All users are encouraged to upgrade, read the
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.4/docs/ChangeLog.txt" target="_blank">
+ChangeLog</a>
+for the details.
 </p>
 <p class="dialogText">
 <strong>IMPORTANT NOTICE:</strong><br />
-The ipsec-tools (racoon) support in AstLinux has been removed.<br />
+The ipsec-tools (racoon) support in AstLinux (since 1.4.2) has been removed.<br />
 The Network tab -> VPN Type: "IPsec Peers" and "IPsec Mobile" in the web interface has been removed.<br />
 The AstLinux Team suggests using either WireGuard or OpenVPN for your VPN needs, but if IPsec is required for
 compatibility reasons the Network tab -> VPN Type: "IPsec strongSwan" should be able to do what you want,
 albeit in a less than ideal text based configuration.
 <br /><br />
 <strong>Updated Documentation Topics:</strong><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_ipsec_vpn_strongswan" target="_blank">
-IPsec VPN (strongSwan) Configuration</a>
-<br /><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_ip_phone_provisioning#phone_template_syntax" target="_blank">
-IP Phone Mass Deployment (Merged Template variables)</a>
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_firewall_external_block_list#updating_netset_blocklists" target="_blank">
+Firewall External Block List (Updating *.netset Blocklists)</a>
 </p>
 
 <h2>Details:</h2>
