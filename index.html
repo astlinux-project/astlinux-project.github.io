@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Copyright (C) 2008-2021 Lonnie Abelbeck -->
+<!-- Copyright (C) 2008-2022 Lonnie Abelbeck -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.4.4</td>
+<td style="text-align: left;">1.4.5</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.4-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.5-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2021-11-01</td>
+<td style="text-align: left;">2022-03-01</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.4/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.5/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.4-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.5-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.38.3, 16.21.1</td>
+<td style="text-align: left;">13.38.3, 16.21.1, 18.10.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.4-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.5-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -109,44 +109,48 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.4.4 Highlights:
+AstLinux 1.4.5 Highlights:
 </p>
 <ul class="listText" style="list-style-type:square">
-<li>Added SIP threats blocklist 'apiban', requires an API Key in /mnt/kd/apiban.conf via https://apiban.org/
+<li>Asterisk 18.x is now supported, along with Asterisk 16.x and Asterisk 13.x built --without-pjproject
 </li>
-<li>Traffic Shaping, add CAKE support, both "Network -> Firewall -> Traffic Shaping" and "Network -> WAN Failover"
-</li>
-<li>2.5G ethernet support for Intel i225 (igc) and Realtek RTL8125 (r8125) NICs
-</li>
-<li>'13se' version now uses Asterisk 13.38.3, "Security Fixes Only" version for Asterisk 13
+<li>Previous ast13-firmware-1.x is no longer being updated, ast13-firmware-1.x users should either switch to ast16-firmware-1.x (recommended) or use ast13se-firmware-1.x if chan_pjsip is not used in your dialplan.
 </li>
 </ul>
 <ul class="listText">
-<li>Linux Kernel 4.19.208, security and bug fixes
+<li>Linux Kernel 4.19.230, security and bug fixes
 </li>
-<li>RUNNIX, version bump to runnix-0.6.5
+<li>RUNNIX, version bump to runnix-0.6.6
 </li>
-<li>OpenSSL, version bump to 1.1.1l, security fixes
+<li>OpenSSL, version bump to 1.1.1m, security fixes: none
 </li>
-<li>LibreTLS, version bump to 3.4.1
+<li>WireGuard VPN, module 1.0.20211208 (version bump), tools 1.0.20210914 (no change)
 </li>
-<li>WireGuard VPN, module 1.0.20210606 (no change), tools 1.0.20210914 (version bump)
+<li>strongSwan, version 5.5.3, security fix: CVE-2021-45079
 </li>
-<li>libcurl (curl) version bump to 7.79.1
+<li>libcurl (curl) version bump to 7.81.0
 </li>
-<li>arnofw (AIF), reload-blocklist-netset script, add support for 'apiban'
+<li>chrony, version bump to 4.2
 </li>
-<li>acme-client, version bump to 2.9.0
+<li>darkstat, version bump to 3.0.721
 </li>
-<li>Monit, version bump to 5.29.0
+<li>expat, version bump to 2.4.6, security fixes: many
 </li>
-<li>prosody, version bump to 0.11.10
+<li>Monit, version bump to 5.31.0
 </li>
-<li>vnStat, version bump to 2.8
+<li>msmtp, version bump to 1.8.19, 'msmtpd' security fix
 </li>
-<li>zabbix, version bump to 4.0.35
+<li>mtr, version bump to 0.95
 </li>
-<li>Asterisk '13se' (stable edition) version 13.38.3 is the latest Asterisk 13.x "Security Fixes Only" version,
+<li>prosody, version bump to 0.11.13
+</li>
+<li>tarsnap, version bump to 1.0.40, "Trust No One" encrypted backups using the Tarsnap Backup service.
+</li>
+<li>vnStat, version bump to 2.9
+</li>
+<li>zabbix, version bump to 4.0.38
+</li>
+<li>Asterisk '13se' (stable edition) version 13.38.3 is the latest Asterisk 13.x "Legacy" version,
 built --without-pjproject
 </li>
 <li>Package upgrades providing <strong>important</strong> security and bug fixes
@@ -154,7 +158,7 @@ built --without-pjproject
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.4/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.5/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
@@ -167,8 +171,8 @@ compatibility reasons the Network tab -> VPN Type: "IPsec strongSwan" should be 
 albeit in a less than ideal text based configuration.
 <br /><br />
 <strong>Updated Documentation Topics:</strong><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_firewall_external_block_list#updating_netset_blocklists" target="_blank">
-Firewall External Block List (Updating *.netset Blocklists)</a>
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:hosted_guest_vm_vultr" target="_blank">
+Vultr KVM (Cloud Hosted Guest VM's)</a>
 </p>
 
 <h2>Details:</h2>
@@ -176,7 +180,7 @@ Firewall External Block List (Updating *.netset Blocklists)</a>
 AstLinux provides a communication and networking platform including:
 </p>
 <ul class="listText">
-<li>Asterisk 13 or 16:
+<li>Asterisk 13, 16 or 18:
 <a class="linkText" href="https://www.asterisk.org/" target="_blank">SIP, DAHDI</a> - 
 Voice PBX
 </li>
