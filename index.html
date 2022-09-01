@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.4.6</td>
+<td style="text-align: left;">1.4.7</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.6-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.7-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2022-06-01</td>
+<td style="text-align: left;">2022-09-01</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.6/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.7/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.6-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.7-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.38.3, 16.25.3, 18.11.3</td>
+<td style="text-align: left;">13.38.3, 16.27.0, 18.13.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.6-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.7-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -109,40 +109,38 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.4.6 Highlights:
+AstLinux 1.4.7 Highlights:
 </p>
 <ul class="listText" style="list-style-type:square">
-<li>Add support for UEFI boot in addition to the current Legacy BIOS boot
+<li>Support for UEFI boot in addition to Legacy BIOS boot
 </li>
 </ul>
 <ul class="listText">
-<li>Linux Kernel 4.19.242, security and bug fixes
+<li>Linux Kernel 4.19.254, security and bug fixes
 </li>
-<li>igc, backport from linux-5.4.191, Intel i225 2.5-Gigabit Ethernet Network Driver
+<li>igc, backport from linux-5.4.208, Intel i225 2.5-Gigabit Ethernet Network Driver
 </li>
-<li>r8125, version 9.009.00, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
+<li>r8125, version 9.009.02, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
 </li>
-<li>RUNNIX, version bump to runnix-0.6.11
+<li>igb, version bump to 5.11.4, Intel 1.0-Gigabit Ethernet Network Driver
 </li>
-<li>OpenSSL, version bump to 1.1.1o, security fixes: CVE-2022-0778, CVE-2022-1292
+<li>RUNNIX, version bump to runnix-0.6.12
 </li>
-<li>OpenVPN, version bump to 2.4.12, security fix: CVE-2022-0547
+<li>OpenSSL, version bump to 1.1.1q, security fixes: CVE-2022-2068, CVE-2022-2097
 </li>
-<li>libcurl (curl) version bump to 7.83.1, security fixes: many
+<li>WireGuard VPN, module 1.0.20220627 (version bump), tools 1.0.20210914 (no change)
 </li>
-<li>LibreTLS, version bump to 3.5.2
+<li>htop, version bump to 3.2.1
 </li>
-<li>Monit, version bump to 5.32.0
+<li>libcurl (curl) version bump to 7.84.0, security fixes: CVE-2022-32205, CVE-2022-32206, CVE-2022-32207, CVE-2022-32208
 </li>
-<li>msmtp, version bump to 1.8.20
+<li>pjsip version bump to 2.12.1, security fixes: many
 </li>
-<li>php, version 7.2.34, add security fix: CVE-2021-21707
+<li>sqlite, version bump to 3.39.2, security fix: CVE-2022-35737
 </li>
-<li>smartctl (smartmontools), version bump to 7.3, drivedb.h snapshot 2022-05-10
+<li>unbound, version bump to 1.16.2, security fixes: CVE-2022-30698, CVE-2022-30699
 </li>
-<li>sqlite, version bump to 3.38.5, JSON support is now enabled
-</li>
-<li>zabbix, version bump to 4.0.40
+<li>zabbix, version bump to 4.0.43
 </li>
 <li>Asterisk '13se' (stable edition) version 13.38.3 is the last Asterisk 13.x "Legacy" version,
 built --without-pjproject
@@ -152,21 +150,14 @@ built --without-pjproject
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.6/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.7/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
 <p class="dialogText">
-<strong>New Documentation Topics:</strong><br />
+<strong>Updated Documentation Topics:</strong><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:boot-bios-uefi" target="_blank">
 Boot Mode: Legacy BIOS or UEFI</a>
-<br /><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_qotom_q750g5" target="_blank">
-Qotom Q750G5 Celeron J4125 Fanless Appliance</a>
-<br /><br />
-<strong>Updated Documentation Topics:</strong><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:new-install" target="_blank">
-New Installation</a>
 </p>
 
 <h2>Details:</h2>
