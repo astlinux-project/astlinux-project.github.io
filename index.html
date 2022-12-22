@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.4.7</td>
+<td style="text-align: left;">1.4.8</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.7-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.8-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2022-09-01</td>
+<td style="text-align: left;">2022-12-21</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.7/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.8/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.7-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.8-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.38.3, 16.27.0, 18.13.0</td>
+<td style="text-align: left;">13.38.3, 16.29.1, 18.15.1</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.7-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.4.8-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -109,38 +109,44 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 
 <h2>Release Notes:</h2>
 <p>
-AstLinux 1.4.7 Highlights:
+AstLinux 1.4.8 Highlights:
 </p>
 <ul class="listText" style="list-style-type:square">
 <li>Support for UEFI boot in addition to Legacy BIOS boot
 </li>
 </ul>
 <ul class="listText">
-<li>Linux Kernel 4.19.254, security and bug fixes
+<li>Linux Kernel 4.19.266, security and bug fixes
 </li>
-<li>igc, backport from linux-5.4.208, Intel i225 2.5-Gigabit Ethernet Network Driver
+<li>igc, backport from linux-5.4.211, Intel i225/i226 2.5-Gigabit Ethernet Network Driver
 </li>
-<li>r8125, version 9.009.02, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
+<li>r8125, version 9.010.01, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
 </li>
-<li>igb, version bump to 5.11.4, Intel 1.0-Gigabit Ethernet Network Driver
+<li>RUNNIX, version bump to runnix-0.6.13
 </li>
-<li>RUNNIX, version bump to runnix-0.6.12
+<li>OpenSSL, version bump to 1.1.1s
 </li>
-<li>OpenSSL, version bump to 1.1.1q, security fixes: CVE-2022-2068, CVE-2022-2097
+<li>ddclient, ddclient-curl version 3.8.3-07, add IPv64 (https://ipv64.net/) service type for both IPv4 and IPv6
 </li>
-<li>WireGuard VPN, module 1.0.20220627 (version bump), tools 1.0.20210914 (no change)
+<li>libcurl (curl) version bump to 7.86.0, security fixes: CVE-2022-35252, CVE-2022-32221, CVE-2022-35260, CVE-2022-42915, CVE-2022-42916
 </li>
-<li>htop, version bump to 3.2.1
+<li>netsnmp, version bump to 5.9.3, security fixes: CVE-2022-24805, CVE-2022-24809, CVE-2022-24806, CVE-2022-24807, CVE-2022-24808, CVE-2022-24810
 </li>
-<li>libcurl (curl) version bump to 7.84.0, security fixes: CVE-2022-32205, CVE-2022-32206, CVE-2022-32207, CVE-2022-32208
+<li>pjsip version 2.12.1, backport two security fixes (c4d3498 and 450baca) from pjproject 2.13
 </li>
-<li>pjsip version bump to 2.12.1, security fixes: many
+<li>sqlite, version bump to 3.39.4
 </li>
-<li>sqlite, version bump to 3.39.2, security fix: CVE-2022-35737
+<li>strongSwan, version 5.5.3, security fix: CVE-2022-40617
 </li>
-<li>unbound, version bump to 1.16.2, security fixes: CVE-2022-30698, CVE-2022-30699
+<li>unbound, version bump to 1.17.0, security fix: CVE-2022-3204
 </li>
-<li>zabbix, version bump to 4.0.43
+<li>vnStat, version bump to 2.10
+</li>
+<li>zabbix, version bump to 4.0.44
+</li>
+<li>VMware Tools (open-vm-tools) version 10.3.10, security fix: CVE-2022-31676
+</li>
+<li>Network tab, Dynamic DNS Update, add "IPv64" service type. More Info: https://ipv64.net/
 </li>
 <li>Asterisk '13se' (stable edition) version 13.38.3 is the last Asterisk 13.x "Legacy" version,
 built --without-pjproject
@@ -150,7 +156,7 @@ built --without-pjproject
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.7/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.4.8/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>

@@ -1,3 +1,3 @@
-403bae53c24edb8281d9c05df2148c5d5085cecd7e0cde451f4ffc5d75957804  astlinux-1.4.7-genx86_64.iso
-2f0e0a04a7bb32e9854b8de5edb3996eaa84bda324b29f12996bcc679e6761a8  astlinux-1.4.7-genx86_64-serial.iso
-1d1b1ec4f53a5eacf3598fa84a689bb78ef13177b3292d94fc2974b4afc5fc80  astlinux-1.4.7-genx86_64-vm.iso
+7f06c33474d04fb6736f405478dbcf40e3ec58efd0f7d82279c237db0c3f3fc5  astlinux-1.4.8-genx86_64.iso
+6f545497b2d63f1e37df6765f515dd5da093effe1fd31558fa6cc25d788cdbd8  astlinux-1.4.8-genx86_64-serial.iso
+aa6af53d726a54ff4343b516f9bdaf14d49126f1d8ee0bef0e594fd5878ed0b9  astlinux-1.4.8-genx86_64-vm.iso
