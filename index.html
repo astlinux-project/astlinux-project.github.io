@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.5.1</td>
+<td style="text-align: left;">1.5.2</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.1-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.2-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2023-07-04</td>
+<td style="text-align: left;">2023-11-14</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.1/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.2/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.1-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.2-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">13.38.3, 16.30.0, 18.18.0</td>
+<td style="text-align: left;">16.30.0, 18.20.0, 20.5.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.1-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.2-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -109,65 +109,73 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 
 <h2>Release Notes:</h2>
 <p>
-New 1.5.x series based on Linux Kernel 5.10:
+Changes to supported firmware builds:
 </p>
 <ul class="listText">
-<li>Toolchain: glibc 2.31, binutils 2.35.1, gcc 9.4.0, using crosstool-ng-1.25.0
+<li>Previous 'ast13se' and 'ast16' firmware branches are no longer updated.
 </li>
-<li>Filesystem: use ext4 driver instead of ext2.  Enable feature 'extra_isize' for new installs, without journal
+<li>New 'ast16se' firmware branch, Asterisk 16.x built --without-pjproject and --without-dahdi
 </li>
-<li>Network Drivers: wireguard, igb, igc and e1000e drivers are now native with the 5.10 kernel
+<li>Previous 'ast18' firmware branch, Asterisk 18.x built --with-pjproject and --with-dahdi
 </li>
-<li>DAHDI: dahdi-linux 3.2.0 and dahdi-tools 3.2.0
+<li>New 'ast20' firmware branch, Asterisk 20.x built --with-pjproject and --with-dahdi
 </li>
 </ul>
 <p>
-AstLinux 1.5.1 Highlights:
+AstLinux 1.5.2 Highlights:
 </p>
 <ul class="listText">
-<li>Linux Kernel 5.10.179, security and bug fixes
+<li>Linux Kernel 5.10.197, security and bug fixes
 </li>
-<li>RUNNIX, version bump to runnix-0.6.15
+<li>RUNNIX, version bump to runnix-0.6.16
 </li>
-<li>OpenSSL, version bump to 1.1.1u, security fixes: CVE-2023-0464, CVE-2023-0465, CVE-2023-0466, CVE-2023-2650
+<li>OpenSSL, version bump to 1.1.1w, security fixes: CVE-2023-3446, CVE-2023-3817
 </li>
-<li>libcurl (curl) version bump to 8.1.2, security fixes: CVE-2023-27537, CVE-2023-27536, CVE-2023-27535, CVE-2023-27534, CVE-2023-27533, CVE-2023-28319, CVE-2023-28320, CVE-2023-28321, CVE-2023-28322
+<li>libcurl (curl) version bump to 8.4.0, security fixes: CVE-2023-38039, CVE-2023-38545, CVE-2023-38546
 </li>
-<li>libcap, version bump to 2.69, security fixes: CVE-2023-2602, CVE-2023-2603
+<li>LibreTLS, version bump to 3.8.1
 </li>
-<li>libpcap, version bump to 1.10.4
+<li>libpng, version bump to 1.6.40
 </li>
-<li>libxml2, version bump to 2.10.4, security fixes: CVE-2023-29469, CVE-2023-28484
+<li>libsodium, version bump to 1.0.19
 </li>
-<li>dnsmasq, version 2.84, security fix: CVE-2023-28450
+<li>libxml2, version bump to 2.11.5
 </li>
-<li>Fossil, (major) version bump to 2.22
+<li>chrony, version bump to 4.4
 </li>
-<li>ncurses, version bump to 6.4, security fix: CVE-2023-29491
+<li>ne, version bump to 3.3.3
 </li>
-<li>pjsip version bump to 2.13
+<li>msmtp, version bump to 1.8.25
 </li>
-<li>sngrep, version bump to 1.7.0
+<li>netsnmp, version bump to 5.9.4
 </li>
-<li>sqlite, version bump to 3.42.0
+<li>pjsip version bump to 2.13.1
 </li>
-<li>tiff, version bump to 4.5.1
+<li>screen, version 4.9.1, security fix: CVE-2023-24626
 </li>
-<li>tcpdump, version bump to 4.99.4
+<li>sqlite, version bump to 3.43.2
 </li>
-<li>udev (eudev), version bump to 3.2.12
+<li>sqliteodbc, version bump to 0.99991
 </li>
-<li>zabbix, version bump to 4.0.47, security fix: CVE-2023-29456
+<li>tiff, version bump to 4.6.0
 </li>
-<li>Asterisk '13se' (stable edition) version 13.38.3 is the last Asterisk 13.x "Legacy" version,
-built --without-pjproject
+<li>unbound, version bump to 1.18.0
+</li>
+<li>unixodbc, version bump to 2.3.12
+</li>
+<li>vnStat, version bump to 2.11
+</li>
+<li>zabbix, version bump to 4.0.50
+</li>
+<li>Asterisk '16se' (stable edition) version 16.30.0 is the last Asterisk 16.x "Legacy" version,
+built --without-pjproject and --without-dahdi
 </li>
 <li>Package upgrades providing <strong>important</strong> security and bug fixes
 </li>
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.1/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.2/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
@@ -178,15 +186,15 @@ New AstLinux installs created with 1.5.0 (or later) can not run versions before 
 ext4 partitions contain filesystem features not understood by the previous ext2 filesystem driver.
 <br /><br />
 <strong>New Documentation Topics:</strong><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_bmax_b1_plus" target="_blank">
-Bmax B1 Plus Celeron N3350 Fanless Mini PC</a>
-<br /><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_minisforum_n40" target="_blank">
-MINISFORUM N40 Celeron N4020 Fanless Mini PC</a>
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_hsipc_n4120" target="_blank">
+HSIPC HS-N4120 Fanless Appliance</a>
 <br /><br />
 <strong>Updated Documentation Topics:</strong><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_dns_tls_proxy#dns-tls_proxy_server_list" target="_blank">
-DNS-TLS Proxy server list -> NextDNS</a>
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_bmax_b1_plus" target="_blank">
+Bmax B1 Plus/Pro Celeron N3350/N4000 Fanless Mini PC</a>
+<br /><br />
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
+Asterisk LTS Series Version</a>
 </p>
 
 <h2>Details:</h2>
@@ -194,7 +202,7 @@ DNS-TLS Proxy server list -> NextDNS</a>
 AstLinux provides a communication and networking platform including:
 </p>
 <ul class="listText">
-<li>Asterisk 13, 16 or 18:
+<li>Asterisk 16, 18 or 20:
 <a class="linkText" href="https://www.asterisk.org/" target="_blank">SIP, DAHDI</a> - 
 Voice PBX
 </li>
@@ -285,9 +293,9 @@ Qotom Q530G6</a>
 Supported 64-bit, x86_64 Mini PCs include:
 </p>
 <ul class="listText">
-<li>Intel Celeron N3350 fanless Mini PC:
+<li>Intel Celeron N3350/N4000 fanless Mini PC:
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_bmax_b1_plus" target="_blank">
-Bmax B1 Plus</a>
+Bmax B1 Plus/Pro</a>
 </li>
 <li>Intel Celeron N4020 fanless Mini PC:
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_minisforum_n40" target="_blank">
