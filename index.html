@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Copyright (C) 2008-2023 Lonnie Abelbeck -->
+<!-- Copyright (C) 2008-2024 Lonnie Abelbeck -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.5.2</td>
+<td style="text-align: left;">1.5.3</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.2-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.3-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2023-11-14</td>
+<td style="text-align: left;">2024-01-30</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.2/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.3/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.2-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.3-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">16.30.0, 18.20.0, 20.5.0</td>
+<td style="text-align: left;">16.30.0, 18.20.2, 20.5.2</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.2-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.3-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -107,65 +107,37 @@ Network routing, stateful filtering firewall and VPN support.
 AstLinux's framework allows integrators and developers to deploy solutions that may be remotely monitored, supported and upgraded using an optimized 60 MB compressed image.
 </p>
 
-<h2>Release Notes:</h2>
 <p>
-Changes to supported firmware builds:
+AstLinux 1.5.3 Highlights:
 </p>
 <ul class="listText">
-<li>Previous 'ast13se' and 'ast16' firmware branches are no longer updated.
+<li>Linux Kernel 5.10.205, security and bug fixes
 </li>
-<li>New 'ast16se' firmware branch, Asterisk 16.x built --without-pjproject and --without-dahdi
+<li>RUNNIX, version bump to runnix-0.6.17
 </li>
-<li>Previous 'ast18' firmware branch, Asterisk 18.x built --with-pjproject and --with-dahdi
+<li>i40e, enable the Intel 10-Gigabit Ethernet Network Driver (Intel X710/XL710/XXV710/X722 support)
 </li>
-<li>New 'ast20' firmware branch, Asterisk 20.x built --with-pjproject and --with-dahdi
+<li>r8125, version 9.012.04, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
 </li>
-</ul>
-<p>
-AstLinux 1.5.2 Highlights:
-</p>
-<ul class="listText">
-<li>Linux Kernel 5.10.197, security and bug fixes
+<li>OpenSSH, version bump to 8.4p1, security fixes: CVE-2021-28041, CVE-2021-41617, CVE-2023-48795, CVE-2023-51385
 </li>
-<li>RUNNIX, version bump to runnix-0.6.16
+<li>libcurl (curl) version bump to 8.5.0, security fixes: CVE-2023-46218, CVE-2023-46219
 </li>
-<li>OpenSSL, version bump to 1.1.1w, security fixes: CVE-2023-3446, CVE-2023-3817
+<li>libxml2, version bump to 2.11.6
 </li>
-<li>libcurl (curl) version bump to 8.4.0, security fixes: CVE-2023-38039, CVE-2023-38545, CVE-2023-38546
+<li>chrony, version bump to 4.5
 </li>
-<li>LibreTLS, version bump to 3.8.1
+<li>php, version 7.2.34, add security fix: CVE-2023-3823
 </li>
-<li>libpng, version bump to 1.6.40
+<li>sngrep, version bump to 1.8.0
 </li>
-<li>libsodium, version bump to 1.0.19
+<li>sqlite, version bump to 3.44.2
 </li>
-<li>libxml2, version bump to 2.11.5
+<li>udev (eudev), version bump to 3.2.14
 </li>
-<li>chrony, version bump to 4.4
+<li>unbound, version bump to 1.19.0
 </li>
-<li>ne, version bump to 3.3.3
-</li>
-<li>msmtp, version bump to 1.8.25
-</li>
-<li>netsnmp, version bump to 5.9.4
-</li>
-<li>pjsip version bump to 2.13.1
-</li>
-<li>screen, version 4.9.1, security fix: CVE-2023-24626
-</li>
-<li>sqlite, version bump to 3.43.2
-</li>
-<li>sqliteodbc, version bump to 0.99991
-</li>
-<li>tiff, version bump to 4.6.0
-</li>
-<li>unbound, version bump to 1.18.0
-</li>
-<li>unixodbc, version bump to 2.3.12
-</li>
-<li>vnStat, version bump to 2.11
-</li>
-<li>zabbix, version bump to 4.0.50
+<li>ca-certificates, update trusted root certificates 2023-12-12
 </li>
 <li>Asterisk '16se' (stable edition) version 16.30.0 is the last Asterisk 16.x "Legacy" version,
 built --without-pjproject and --without-dahdi
@@ -175,7 +147,7 @@ built --without-pjproject and --without-dahdi
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.2/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.3/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
@@ -193,6 +165,7 @@ HSIPC HS-N4120 Fanless Appliance</a>
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_bmax_b1_plus" target="_blank">
 Bmax B1 Plus/Pro Celeron N3350/N4000 Fanless Mini PC</a>
 <br /><br />
+<strong>Firmware Repository URL:</strong><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
 Asterisk LTS Series Version</a>
 </p>
