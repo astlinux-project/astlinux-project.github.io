@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.5.4</td>
+<td style="text-align: left;">1.5.5</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.4-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.5-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2024-05-30</td>
+<td style="text-align: left;">2024-09-28</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.4/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.5/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.4-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.5-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">16.30.0, 18.22.0, 20.7.0</td>
+<td style="text-align: left;">16.30.0, 18.24.3, 20.9.3</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.4-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.5-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -108,46 +108,38 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 </p>
 
 <p>
-AstLinux 1.5.4 Highlights:
+AstLinux 1.5.5 Highlights:
 </p>
 <ul class="listText">
-<li>Linux Kernel 5.10.216, security and bug fixes
+<li>Linux Kernel 5.10.223, security and bug fixes
 </li>
-<li>RUNNIX, version bump to runnix-0.6.18
+<li>RUNNIX, version bump to runnix-0.6.19
 </li>
-<li>atlantic, enable the Marvell (Aquantia) 10-Gigabit Ethernet Network Driver (Aquantia AQC107/AQC113/etc. support)
+<li>jitterentropy-rngd, new package, version 1.2.8, Random Number Generator (RNG) daemon. Previous rng-tools 'rngd' daemon is no longer used.
 </li>
-<li>r8125, version 9.013.02, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
+<li>s3fs, new package, version 1.94, allows a user to mount an S3 bucket via FUSE filesystem
 </li>
-<li>libcurl (curl) version bump to 8.7.1, security fixes: CVE-2024-0853, CVE-2024-2004, CVE-2024-2379, CVE-2024-2398, CVE-2024-2466
+<li>libcurl (curl) version bump to 8.9.1, security fix: CVE-2024-6874
 </li>
-<li>expat, version bump to 2.6.2, security fixes: CVE-2023-52425, CVE-2023-52426, CVE-2024-28757
+<li>libxml2, version bump to 2.11.9, security fix: CVE-2024-40896
 </li>
-<li>libxml2, version bump to 2.11.8, security fixes: CVE-2024-25062, CVE-2024-34459
+<li>iperf3, version bump to 3.17.1, security fix: CVE-2024-26306
 </li>
-<li>php, version 7.2.34, add security fixes: CVE-2024-2756, CVE-2024-3096
+<li>sngrep, version bump to 1.8.2, security fix
 </li>
-<li>sngrep, version bump to 1.8.1, security fix: CVE-2024-3120
+<li>unbound, version bump to 1.21.0, security fix: CVE-2024-33655
 </li>
-<li>tinyproxy, version bump to 1.11.2, security fix: CVE-2023-49606
+<li>chrony, version bump to 4.6
 </li>
-<li>unbound, version bump to 1.19.3, security fixes: CVE-2023-50387, CVE-2023-50868, CVE-2024-1931
+<li>Monit, version bump to 5.34.0
 </li>
-<li>fping, version bump to 5.2
+<li>netcalc, version bump to 2.1.7
 </li>
-<li>htop, version bump to 3.3.0
+<li>sqlite, version bump to 3.46.1
 </li>
-<li>msmtp, version bump to 1.8.26
+<li>ca-certificates, update trusted root certificates 2024-07-02
 </li>
-<li>sqlite, version bump to 3.45.3
-</li>
-<li>stunnel, version bump to 5.72
-</li>
-<li>vnStat, version bump to 2.12
-</li>
-<li>ca-certificates, update trusted root certificates 2024-03-11
-</li>
-<li>mac2vendor, oui.txt database snapshot 2024-05-22
+<li>mac2vendor, oui.txt database snapshot 2024-09-14
 </li>
 <li>Asterisk '16se' (stable edition) version 16.30.0 is the last Asterisk 16.x "Legacy" version,
 built --without-pjproject and --without-dahdi
@@ -157,7 +149,7 @@ built --without-pjproject and --without-dahdi
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.4/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.5/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
@@ -166,6 +158,10 @@ for the details.
 Existing AstLinux installs created before 1.5.0 can be upgraded to 1.5.0 (or later) and downgraded back without issue.<br />
 New AstLinux installs created with 1.5.0 (or later) can not run versions before 1.5.0 since the newly created
 ext4 partitions contain filesystem features not understood by the previous ext2 filesystem driver.
+<br /><br />
+<strong>New Documentation Topics:</strong><br />
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_s3_object_storage_client" target="_blank">
+S3 Object Storage Client (s3fs)</a>
 <br /><br />
 <strong>Firmware Repository URL:</strong><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
