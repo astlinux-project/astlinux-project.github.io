@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.5.6</td>
+<td style="text-align: left;">1.5.10</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.6-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.10-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2025-01-30</td>
+<td style="text-align: left;">2025-04-30</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.6/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.10/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.6-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.10-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">16.30.0, 18.26.1, 20.11.1</td>
+<td style="text-align: left;">16.30.0, 18.26.1, 20.13.0</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.6-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.10-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -108,46 +108,44 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 </p>
 
 <p>
-AstLinux 1.5.6 Highlights:
+AstLinux 1.5.10 Highlights:
 </p>
 <ul class="listText">
-<li>Linux Kernel 5.10.233, security and bug fixes
+<li>Linux Kernel 5.10.236-cip59, security and bug fixes <i>(Switch to using the "Civil Infrastructure Platform" SLTS v5.10 kernel)</i>
 </li>
-<li>RUNNIX, version bump to runnix-0.6.20
+<li>Add NVMe block device system support as a bootable disk
 </li>
-<li>r8125, version 9.014.01, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
+<li>RUNNIX, version bump to runnix-0.6.22
 </li>
-<li>OpenSSL, version 1.1.1w, security fixes: CVE-2023-5678, CVE-2024-0727, CVE-2024-2511, CVE-2024-4741, CVE-2024-5535, CVE-2024-9143
+<li>r8125, version 9.015.00, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
 </li>
-<li>libcurl (curl) version bump to 8.11.1, security fix: CVE-2024-9681, CVE-2024-11053
+<li>OpenSSH, version 8.4p1, security fix: CVE-2025-26465
 </li>
-<li>expat, version bump to 2.6.4, security fixes: CVE-2024-45490, CVE-2024-45491, CVE-2024-45492, CVE-2024-50602
+<li>libcurl (curl) version bump to 8.13.0, security fix: CVE-2025-0167, CVE-2025-0665, CVE-2025-0725
 </li>
-<li>iperf3, version bump to 3.18, security fix: CVE-2024-53580
+<li>expat, version bump to 2.7.1, security fixes: CVE-2024-8176
 </li>
-<li>php, version 7.2.34, add security fixes: CVE-2024-8925, CVE-2024-8927, CVE-2024-8932, CVE-2024-11234, CVE-2024-11236
+<li>htop, version bump to 3.4.1
 </li>
-<li>unbound, version bump to 1.22.0, security fix: CVE-2024-8508
+<li>keepalived, version bump to 2.3.3
 </li>
-<li>chrony, version bump to 4.6.1
+<li>kmod, version bump to 34.2
 </li>
-<li>kexec, version bump to 2.0.30
+<li>Monit, version bump to 5.35.1
 </li>
-<li>Monit, version bump to 5.34.4
+<li>msmtp, version bump to 1.8.28
 </li>
-<li>s3fs, version bump to 1.95
+<li>sqlite, version bump to 3.49.1
 </li>
-<li>screen, version bump to 5.0.0
+<li>tarsnap, version bump to 1.0.41, "Trust No One" encrypted backups using the Tarsnap Backup service
 </li>
-<li>sqlite, version bump to 3.47.2
+<li>virtiofs, for genx86_64-vm builds, Proxmox 8.4 and later supports this feature via QEMU on the host
 </li>
-<li>unionfs (fuse), version bump to 3.6
+<li>vnStat, version bump to 2.13
 </li>
-<li>ca-certificates, update trusted root certificates 2024-12-31
+<li>ca-certificates, update trusted root certificates 2025-02-25
 </li>
-<li>mac2vendor, oui.txt database snapshot 2025-01-10
-</li>
-<li>Time Zone Database update, tzdata2025a and php-timezonedb-2025.1
+<li>Time Zone Database update, tzdata2025b and php-timezonedb-2025.2
 </li>
 <li>Asterisk '16se' (stable edition) version 16.30.0 is the last Asterisk 16.x "Legacy" version,
 built --without-pjproject and --without-dahdi
@@ -157,7 +155,7 @@ built --without-pjproject and --without-dahdi
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.6/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.10/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
@@ -168,8 +166,14 @@ New AstLinux installs created with 1.5.0 (or later) can not run versions before 
 ext4 partitions contain filesystem features not understood by the previous ext2 filesystem driver.
 <br /><br />
 <strong>New Documentation Topics:</strong><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_s3_object_storage_client" target="_blank">
-S3 Object Storage Client (s3fs)</a>
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_qotom_q10922h6" target="_blank">
+Qotom Q10922H6 Intel N100 Fanless Appliance</a>
+<br /><br />
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_mele_quieterdl" target="_blank">
+MeLE QuieterDL Intel N100 Fanless Mini PC</a>
+<br /><br />
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:guest_vm_utm" target="_blank">
+UTM (macOS Apple Silicon)</a>
 <br /><br />
 <strong>Firmware Repository URL:</strong><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
@@ -266,7 +270,11 @@ Qotom Q750G5</a>
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_qotom_q530g6" target="_blank">
 Qotom Q530G6</a>
 </li>
-<li>Generic 64-bit, x86_64 PC Hardware with SATA storage and UEFI or Legacy BIOS</li>
+<li>Intel N100 fanless appliance:
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_qotom_q10922h6" target="_blank">
+Qotom Q10922H6</a>
+</li>
+<li>Generic 64-bit, x86_64 PC Hardware with SATA or NVMe storage and UEFI or Legacy BIOS</li>
 </ul>
 <p>
 Supported 64-bit, x86_64 Mini PCs include:
@@ -279,6 +287,10 @@ Bmax B1 Plus/Pro</a>
 <li>Intel Celeron N4020 fanless Mini PC:
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_minisforum_n40" target="_blank">
 MINISFORUM N40</a>
+</li>
+<li>Intel N100 fanless Mini PC:
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_mele_quieterdl" target="_blank">
+MeLE QuieterDL</a>
 </li>
 </ul>
 <p>
@@ -299,6 +311,7 @@ Hosted KVM x86_64 Virtualization:
 </li>
 <li>Other x86_64 Virtualization:
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:guest_vm_hyperv" target="_blank">Hyper-V</a>
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:guest_vm_utm" target="_blank">UTM</a>
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:guest_vm_virtualbox" target="_blank">VirtualBox</a>
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:guest_vm_vmware_vsphere" target="_blank">VMware</a>
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:guest_vm_xenserver" target="_blank">XenServer</a>
