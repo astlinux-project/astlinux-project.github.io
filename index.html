@@ -35,19 +35,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.5.10</td>
+<td style="text-align: left;">1.5.11</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.10-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.11-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2025-04-30</td>
+<td style="text-align: left;">2025-07-30</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -57,20 +57,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.10/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.11/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.10-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.11-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">16.30.0, 18.26.1, 20.13.0</td>
+<td style="text-align: left;">16.30.0, 18.26.2, 20.14.1</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -86,7 +86,7 @@ Instructions</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.10-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.11-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -108,44 +108,54 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 </p>
 
 <p>
-AstLinux 1.5.10 Highlights:
+AstLinux 1.5.11 Highlights:
 </p>
 <ul class="listText">
-<li>Linux Kernel 5.10.236-cip59, security and bug fixes <i>(Switch to using the "Civil Infrastructure Platform" SLTS v5.10 kernel)</i>
+<li>Linux Kernel 5.10.238-cip61, security and bug fixes
 </li>
-<li>Add NVMe block device system support as a bootable disk
+<li>RUNNIX, version bump to runnix-0.6.23
 </li>
-<li>RUNNIX, version bump to runnix-0.6.22
+<li>OpenSSL, version 1.1.1w, security fix: CVE-2024-13176
 </li>
-<li>r8125, version 9.015.00, Realtek RTL8125 2.5-Gigabit Ethernet Network Driver
+<li>OpenSSH, version 8.4p1, security fix: CVE-2025-32728
 </li>
-<li>OpenSSH, version 8.4p1, security fix: CVE-2025-26465
+<li>libcurl (curl) version bump to 8.14.1
 </li>
-<li>libcurl (curl) version bump to 8.13.0, security fix: CVE-2025-0167, CVE-2025-0665, CVE-2025-0725
+<li>libmad, version 0.15.1b, security fixes: CVE-2017-8372, CVE-2017-8373, CVE-2017-8374
 </li>
-<li>expat, version bump to 2.7.1, security fixes: CVE-2024-8176
+<li>libxml2, version 2.11.9, many (7) security fixes
 </li>
-<li>htop, version bump to 3.4.1
+<li>chrony, version bump to 4.7
 </li>
-<li>keepalived, version bump to 2.3.3
+<li>keepalived, version bump to 2.3.4
 </li>
-<li>kmod, version bump to 34.2
+<li>Monit, version bump to 5.35.2
 </li>
-<li>Monit, version bump to 5.35.1
+<li>msmtp, version bump to 1.8.30
 </li>
-<li>msmtp, version bump to 1.8.28
+<li>mtr, version bump to 0.96
 </li>
-<li>sqlite, version bump to 3.49.1
+<li>php, version 7.2.34, add security fix: GHSA-wg4p-4hqh-c3g9
 </li>
-<li>tarsnap, version bump to 1.0.41, "Trust No One" encrypted backups using the Tarsnap Backup service
+<li>screen, version 5.0.1, many (5) security fixes
 </li>
-<li>virtiofs, for genx86_64-vm builds, Proxmox 8.4 and later supports this feature via QEMU on the host
+<li>smartctl (smartmontools), version bump to 7.5, drivedb.h snapshot 2025-04-27
 </li>
-<li>vnStat, version bump to 2.13
+<li>sox, version 14.4.2, many (23) security fixes
 </li>
-<li>ca-certificates, update trusted root certificates 2025-02-25
+<li>sqlite, version bump to 3.50.2
 </li>
-<li>Time Zone Database update, tzdata2025b and php-timezonedb-2025.2
+<li>stunnel, version bump to 5.75
+</li>
+<li>sudo, version 1.8.32, backport security fix: CVE-2025-32462
+</li>
+<li>unbound, version bump to 1.23.0
+</li>
+<li>WireGuard, wireguard-tools, version bump to 1.0.20250521
+</li>
+<li>ca-certificates, update trusted root certificates 2025-05-20
+</li>
+<li>mac2vendor, oui.txt database snapshot 2025-07-14
 </li>
 <li>Asterisk '16se' (stable edition) version 16.30.0 is the last Asterisk 16.x "Legacy" version,
 built --without-pjproject and --without-dahdi
@@ -155,7 +165,7 @@ built --without-pjproject and --without-dahdi
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.10/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.11/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
@@ -166,14 +176,14 @@ New AstLinux installs created with 1.5.0 (or later) can not run versions before 
 ext4 partitions contain filesystem features not understood by the previous ext2 filesystem driver.
 <br /><br />
 <strong>New Documentation Topics:</strong><br />
+<a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_protectli_vp2430" target="_blank">
+Protectli VP2430 Intel N150 Fanless Appliance</a>
+<br /><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_qotom_q10922h6" target="_blank">
 Qotom Q10922H6 Intel N100 Fanless Appliance</a>
 <br /><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:board_mele_quieterdl" target="_blank">
 MeLE QuieterDL Intel N100 Fanless Mini PC</a>
-<br /><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:guest_vm_utm" target="_blank">
-UTM (macOS Apple Silicon)</a>
 <br /><br />
 <strong>Firmware Repository URL:</strong><br />
 <a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
