@@ -33,19 +33,19 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.5.12</td>
+<td style="text-align: left;">1.5.13</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Guest VM x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.12-genx86_64-vm.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.13-genx86_64-vm.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2025-10-30</td>
+<td style="text-align: left;">2026-02-28</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -55,20 +55,20 @@ SHA256</a></div></td></tr>
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.12/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.13/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 Generic x86-64bit (Video Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.12-genx86_64.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.13-genx86_64.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
 SHA256</a></div></td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">16.30.0, 18.26.4, 20.15.2</td>
+<td style="text-align: left;">18.26.4, 20.18.2</td>
 <td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
 &nbsp;</div></td>
 <td style="text-align: left;">
@@ -84,7 +84,7 @@ Documentation</a></td>
 Generic x86-64bit (Serial Console):</div></td>
 <td style="text-align: left;">
 <div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.12-genx86_64-serial.iso" target="_blank">
+<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.13-genx86_64-serial.iso" target="_blank">
 Download Install ISO</a>
 <a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
 SHA256</a></div></td></tr>
@@ -104,47 +104,64 @@ Tools including Asterisk, stateful filtering firewall and VPN support.
 AstLinux's framework allows integrators and developers to deploy solutions that may be remotely monitored, supported and upgraded using an optimized 60 MB compressed image.
 </p>
 
+<h2>Release Notes:</h2>
 <p>
-AstLinux 1.5.12 Highlights:
+Changes to supported firmware builds:
 </p>
 <ul class="listText">
-<li>Linux Kernel 5.10.241-cip64, security and bug fixes
+<li>Previous 'ast16se' and 'ast18' firmware branches are no longer updated.
 </li>
-<li>RUNNIX, version bump to runnix-0.6.24
+<li>New 'ast18se' firmware branch, Asterisk 18.x built --without-pjproject and --without-dahdi
 </li>
-<li>OpenSSL, version 1.1.1w, security fix: CVE-2025-9230
+<li>Previous 'ast20' firmware branch, Asterisk 20.x built --with-pjproject and --with-dahdi
 </li>
-<li>libcurl (curl) version bump to 8.16.0, security fix: CVE-2025-9086
+</ul>
+
+<p>
+AstLinux 1.5.13 Highlights:
+</p>
+<ul class="listText">
+<li>Linux Kernel 5.10.249-cip69, security and bug fixes
 </li>
-<li>libpng, version bump to 1.6.50
+<li>RUNNIX, version bump to runnix-0.6.25
 </li>
-<li>libxml2, version 2.11.9, security fixes: CVE-2025-6021, CVE-2025-6170
+<li>OpenSSL, version 1.1.1w, security fixes: CVE-2025-68160, CVE-2025-69418, CVE-2025-69419, CVE-2025-69420, CVE-2025-69421, CVE-2026-22795, CVE-2026-22796
 </li>
-<li>chrony, version bump to 4.8
+<li>libcurl (curl) version bump to 8.17.0
 </li>
-<li>expat, version bump to 2.7.3, security fix: CVE-2025-59375
+<li>libpng, version bump to 1.6.55, security fixes: CVE-2025-64505, CVE-2025-64506, CVE-2025-64720, CVE-2025-65018, CVE-2025-66293, CVE-2026-22695, CVE-2026-22801, CVE-2026-25646
 </li>
-<li>fping, version bump to 5.4
+<li>libsodium, version bump to 1.0.21, security fix
 </li>
-<li>iperf3, version bump to 3.19.1
+<li>avahi, version 0.6.32, security fixes: CVE-2021-3468, CVE-2023-38469, CVE-2023-38470, CVE-2023-38471, CVE-2023-38472, CVE-2023-38473, CVE-2024-52616, CVE-2024-52615, CVE-2025-68276, CVE-2025-68468, CVE-2025-68471, CVE-2026-24401
 </li>
-<li>jansson, version bump to 2.14.1
+<li>expat, version bump to 2.7.4, security fixes: CVE-2026-24515, CVE-2026-25210
 </li>
-<li>msmtp, version bump to 1.8.32
+<li>fping, version bump to 5.5
 </li>
-<li>nut, major version bump to 2.8.4, Note: change to only supporting usbhid-ups, netxml-ups drivers
+<li>iperf3, version bump to 3.20
 </li>
-<li>sqlite, version bump to 3.50.4
+<li>netsnmp, version 5.9.4, security fix: CVE-2025-68615
 </li>
-<li>tiff, version bump to 4.7.1, security fix: CVE-2024-13978
+<li>pcre2, new package, version 10.47, newer though incompatible API from older pcre
 </li>
-<li>unbound, version bump to 1.24.0
+<li>php, version 7.2.34, add security fixes: CVE-2025-14177, CVE-2025-14178, GHSA-www2-q4fc-65wf
 </li>
-<li>unionfs (fuse), version bump to 3.7
+<li>sqlite, version bump to 3.51.2
 </li>
-<li>ca-certificates, update trusted root certificates 2025-09-09
+<li>strongSwan, version 5.5.3, security fix: CVE-2025-62291
 </li>
-<li>Asterisk '16se' (stable edition) version 16.30.0 is the last Asterisk 16.x "Legacy" version,
+<li>unbound, version bump to 1.24.2, security fix: CVE-2025-11411
+</li>
+<li>unixodbc, version bump to 2.3.14
+</li>
+<li>ca-certificates, update trusted root certificates 2025-12-02
+</li>
+<li>mac2vendor, oui.txt database snapshot 2026-01-16
+</li>
+<li>Time Zone Database update, tzdata2025c and php-timezonedb-2025.3
+</li>
+<li>Asterisk '18se' (stable edition) version 18.26.4 is the last Asterisk 18.x "Legacy" version,
 built --without-pjproject and --without-dahdi
 </li>
 <li>Package upgrades providing <strong>important</strong> security and bug fixes
@@ -152,7 +169,7 @@ built --without-pjproject and --without-dahdi
 </ul>
 <p>
 All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.12/docs/ChangeLog.txt" target="_blank">
+<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.13/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a>
 for the details.
 </p>
