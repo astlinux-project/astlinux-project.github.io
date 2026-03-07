@@ -34,72 +34,50 @@
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
 <td style="text-align: left;">1.5.13</td>
-<td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
-Guest VM x86-64bit (Video Console):</div></td>
-<td style="text-align: left;">
-<div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.13-genx86_64-vm.iso" target="_blank">
-Download Install ISO</a>
-<a class="headerText" href="" onclick="return showSHA256iso('genx86_64-vm');">
-SHA256</a></div></td></tr>
+<td style="text-align: center;" colspan="2">
+&nbsp;
+</td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
 <td style="text-align: left;">2026-02-28</td>
-<td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
-&nbsp;</div></td>
-<td style="text-align: left;">
-<div class="hideOnMobile">
-&nbsp;</div></td></tr>
+<td style="text-align: center;" colspan="2">
+After over 21 years (2026-03-01), AstLinux is considered deprecated.
+</td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
 <a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.13/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
-<td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
-Generic x86-64bit (Video Console):</div></td>
-<td style="text-align: left;">
-<div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.13-genx86_64.iso" target="_blank">
-Download Install ISO</a>
-<a class="headerText" href="" onclick="return showSHA256iso('genx86_64');">
-SHA256</a></div></td></tr>
+<td style="text-align: center;" colspan="2">
+New AstLinux installations are no longer recommended.
+</td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
 <td style="text-align: left;">18.26.4, 20.18.2</td>
-<td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
-&nbsp;</div></td>
-<td style="text-align: left;">
-<div class="hideOnMobile">
-&nbsp;</div></td></tr>
+<td style="text-align: center;" colspan="2">
+&nbsp;
+</td></tr>
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">User Documentation:</td>
 <td style="text-align: left;">
 <a class="headerText" href="https://doc.astlinux-project.org/userdoc:documentation" target="_blank">
 Documentation</a></td>
-<td class="statusText" style="text-align: right; font-weight: bold;"><div class="hideOnMobile">
-Generic x86-64bit (Serial Console):</div></td>
+<td class="statusText" style="text-align: right; font-weight: bold;">Firmware Repository URL:</td>
 <td style="text-align: left;">
-<div class="hideOnMobile">
-<a class="headerText" href="https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.13-genx86_64-serial.iso" target="_blank">
-Download Install ISO</a>
-<a class="headerText" href="" onclick="return showSHA256iso('genx86_64-serial');">
-SHA256</a></div></td></tr>
-
-<tr class="dtrow1-hideOnDesktop">
-<td class="statusText" style="text-align: right; font-weight: bold;">Download:</td>
-<td style="text-align: left;" colspan="3">
-Use a desktop browser to download an ISO Installer Image</td></tr>
+<a class="headerText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
+Asterisk LTS Series Version</a>
+</td></tr>
 
 </table>
 </center></td></tr></table></center>
 
 <h2>Description:</h2>
 <p>
-AstLinux is a "Network Appliance Framework" open-source x86_64 Linux software distribution.
+AstLinux is an open-source Linux x86_64 "Network Appliance Framework".
 Tools including Asterisk, stateful filtering firewall and VPN support.
 AstLinux's framework allows integrators and developers to deploy solutions that may be remotely monitored, supported and upgraded using an optimized 60 MB compressed image.
 </p>
@@ -164,27 +142,11 @@ AstLinux 1.5.13 Highlights:
 <li>Asterisk '18se' (stable edition) version 18.26.4 is the last Asterisk 18.x "Legacy" version,
 built --without-pjproject and --without-dahdi
 </li>
-<li>Package upgrades providing <strong>important</strong> security and bug fixes
-</li>
 </ul>
-<p>
-All users are encouraged to upgrade, read the
-<a class="linkText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.13/docs/ChangeLog.txt" target="_blank">
-ChangeLog</a>
-for the details.
-</p>
-<p class="dialogText">
-<strong>IMPORTANT NOTICE:</strong><br />
-After over 21 years (2026-03-01), AstLinux is considered deprecated.  New AstLinux installations are no longer recommended.
-<br /><br />
-<strong>Firmware Repository URL:</strong><br />
-<a class="linkText" href="https://doc.astlinux-project.org/userdoc:tt_asterisk_upgrade_version" target="_blank">
-Asterisk LTS Series Version</a>
-</p>
 
 <h2>Details:</h2>
 <p>
-AstLinux provides a communication and networking platform including:
+AstLinux's framework includes:
 </p>
 <ul class="listText">
 <li>Asterisk 18 or 20:
@@ -347,34 +309,6 @@ function setGTThandler() {
   window.onscroll = set_gototop_scroll;
 }
 setGTThandler();
-// Load iso.sha256.txt file and support parsing it
-var isosha256txt;
-function loadISOsha256file() {
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      isosha256txt = this.responseText;
-    }
-  };
-  xhr.open("GET", "iso.sha256.txt");
-  xhr.send();
-}
-loadISOsha256file();
-function showSHA256iso(type) {
-  if (typeof isosha256txt != 'string') {
-    return false;
-  }
-  var msg;
-  var regex = new RegExp('([0-9a-fA-F]+) +(.*)' + type + '[.]iso');
-  var result = isosha256txt.match(regex);
-  if (result === null) {
-    msg = 'No match';
-  } else {
-    msg = 'SHA256 for ' + result[2] + type + ' ISO:\n\n' + result[1];
-  }
-  alert(msg);
-  return true;
-}
 //]]>
 </script>
 </body>
