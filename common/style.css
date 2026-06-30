@@ -257,7 +257,7 @@ p {
   padding: 10px 0px 10px 40px;
   font-family: "Lucida Grande", "Bitstream Vera Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  line-height: normal;
+  line-height: 150%;
   text-decoration: none;
 }
 

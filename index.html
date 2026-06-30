@@ -11,6 +11,12 @@
 <link rel="stylesheet" href="common/style.css" type="text/css" />
 </head>
 <body>
+<!-- Install ISOs
+https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.14-genx86_64-vm.iso
+https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.14-genx86_64.iso
+https://astlinux-project.org/mirror/downloads/iso/astlinux-1.5.14-genx86_64-serial.iso
+https://astlinux-project.org/mirror/downloads/iso/sha256
+-->
 <table class="headerTable"><tr>
 <td width="140"><img src="common/logo-small.gif" width="113" height="23" alt="AstLinux Project" /></td>
 <td><h1>AstLinux Project</h1></td>
@@ -33,14 +39,14 @@
 
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">AstLinux Release Version:</td>
-<td style="text-align: left;">1.5.13</td>
+<td style="text-align: left;">1.5.14</td>
 <td style="text-align: center;" colspan="2">
 &nbsp;
 </td></tr>
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Release Date:</td>
-<td style="text-align: left;">2026-02-28</td>
+<td style="text-align: left;">2026-06-30</td>
 <td style="text-align: center;" colspan="2">
 After over 21 years (2026-03-01), AstLinux is considered deprecated.
 </td></tr>
@@ -48,7 +54,7 @@ After over 21 years (2026-03-01), AstLinux is considered deprecated.
 <tr class="dtrow0">
 <td class="statusText" style="text-align: right; font-weight: bold;">Changes:</td>
 <td style="text-align: left;">
-<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.13/docs/ChangeLog.txt" target="_blank">
+<a class="headerText" href="https://raw.githubusercontent.com/astlinux-project/astlinux/1.5.14/docs/ChangeLog.txt" target="_blank">
 ChangeLog</a></td>
 <td style="text-align: center;" colspan="2">
 New AstLinux installations are no longer recommended.
@@ -56,7 +62,7 @@ New AstLinux installations are no longer recommended.
 
 <tr class="dtrow1">
 <td class="statusText" style="text-align: right; font-weight: bold;">Asterisk Versions:</td>
-<td style="text-align: left;">18.26.4, 20.18.2</td>
+<td style="text-align: left;">18.26.4, 20.20.1</td>
 <td style="text-align: center;" colspan="2">
 &nbsp;
 </td></tr>
@@ -84,63 +90,68 @@ AstLinux's framework allows integrators and developers to deploy solutions that 
 
 <h2>Release Notes:</h2>
 <p>
-Changes to supported firmware builds:
+AstLinux 1.5.14 Highlights:
 </p>
 <ul class="listText">
-<li>Previous 'ast16se' and 'ast18' firmware branches are no longer updated.
+<li>Linux Kernel 5.10.258-cip74, security and bug fixes
 </li>
-<li>New 'ast18se' firmware branch, Asterisk 18.x built --without-pjproject and --without-dahdi
+<li>RUNNIX, version bump to runnix-0.6.26
 </li>
-<li>Previous 'ast20' firmware branch, Asterisk 20.x built --with-pjproject and --with-dahdi
+<li>OpenSSL, version 1.1.1w, security fixes: CVE-2026-28387, CVE-2026-28388, CVE-2026-28389, CVE-2026-28390,
+CVE-2026-7383, CVE-2026-9076, CVE-2026-34180, CVE-2026-42766, CVE-2026-45447
 </li>
-</ul>
-
-<p>
-AstLinux 1.5.13 Highlights:
-</p>
-<ul class="listText">
-<li>Linux Kernel 5.10.249-cip69, security and bug fixes
+<li>WireGuard, wireguard-tools, version bump to 1.0.20260223
 </li>
-<li>RUNNIX, version bump to runnix-0.6.25
+<li>strongSwan, version 5.5.3, security fixes: CVE-2026-25075, CVE-2026-35330, CVE-2026-35333, CVE-2026-35332, CVE-2026-35329,
+CVE-2026-35331, CVE-2026-35334, CVE-2026-47895
 </li>
-<li>OpenSSL, version 1.1.1w, security fixes: CVE-2025-68160, CVE-2025-69418, CVE-2025-69419, CVE-2025-69420, CVE-2025-69421, CVE-2026-22795, CVE-2026-22796
+<li>libcurl (curl) version bump to 8.17.0, disable smb/smbs support, security fix: CVE-2025-11563 (wcurl)
 </li>
-<li>libcurl (curl) version bump to 8.17.0
+<li>libpng, version bump to 1.6.58, security fixes: CVE-2026-33416, CVE-2026-33636, CVE-2026-34757
 </li>
-<li>libpng, version bump to 1.6.55, security fixes: CVE-2025-64505, CVE-2025-64506, CVE-2025-64720, CVE-2025-65018, CVE-2025-66293, CVE-2026-22695, CVE-2026-22801, CVE-2026-25646
+<li>libsodium, version bump to 1.0.22
 </li>
-<li>libsodium, version bump to 1.0.21, security fix
+<li>libsrtp, version bump to 2.8.0
 </li>
-<li>avahi, version 0.6.32, security fixes: CVE-2021-3468, CVE-2023-38469, CVE-2023-38470, CVE-2023-38471, CVE-2023-38472, CVE-2023-38473, CVE-2024-52616, CVE-2024-52615, CVE-2025-68276, CVE-2025-68468, CVE-2025-68471, CVE-2026-24401
+<li>libxml2, version bump to 2.15.3, security fixes: CVE-2025-27113, CVE-2025-32414, CVE-2025-32415, CVE-2025-49794, CVE-2025-49795,
+CVE-2025-49796, CVE-2026-1757, CVE-2026-0989, CVE-2026-0990, CVE-2026-0992
 </li>
-<li>expat, version bump to 2.7.4, security fixes: CVE-2026-24515, CVE-2026-25210
+<li>beep, version bump to 1.4.12, supports /dev/input/by-path/platform-pcspkr-event-spkr
 </li>
-<li>fping, version bump to 5.5
+<li>dnsmasq, version bump to 2.93, security fixes: CVE-2026-2291, CVE-2026-4890, CVE-2026-4891, CVE-2026-4892, CVE-2026-4893, CVE-2026-5172
 </li>
-<li>iperf3, version bump to 3.20
+<li>expat, version bump to 2.8.2, security fixes: CVE-2026-32776, CVE-2026-32777, CVE-2026-32778, CVE-2026-41080, CVE-2026-45186,
+CVE-2026-50219, CVE-2026-56131, CVE-2026-56132, CVE-2026-564[03-12]
 </li>
-<li>netsnmp, version 5.9.4, security fix: CVE-2025-68615
+<li>iperf3, version bump to 3.21
 </li>
-<li>pcre2, new package, version 10.47, newer though incompatible API from older pcre
+<li>jitterentropy-rngd, version bump to 1.3.1
 </li>
-<li>php, version 7.2.34, add security fixes: CVE-2025-14177, CVE-2025-14178, GHSA-www2-q4fc-65wf
+<li>sqlite, version bump to 3.53.2, fixes the rare WAL-reset database corruption bug
 </li>
-<li>sqlite, version bump to 3.51.2
+<li>stunnel, version bump to 5.78
 </li>
-<li>strongSwan, version 5.5.3, security fix: CVE-2025-62291
+<li>unbound, version bump to 1.25.1, security fixes: CVE-2026-33278, CVE-2026-42944, CVE-2026-42959, CVE-2026-32792, CVE-2026-40622, CVE-2026-41292,
+CVE-2026-42534, CVE-2026-42923, CVE-2026-42960, CVE-2026-44390, CVE-2026-44608
 </li>
-<li>unbound, version bump to 1.24.2, security fix: CVE-2025-11411
+<li>unionfs (fuse), version 3.7, compile with -DDISABLE_AT to fix chmod issue
 </li>
-<li>unixodbc, version bump to 2.3.14
+<li>ca-certificates, update trusted root certificates 2026-05-14
 </li>
-<li>ca-certificates, update trusted root certificates 2025-12-02
+<li>mac2vendor, oui.txt database snapshot 2026-06-06
 </li>
-<li>mac2vendor, oui.txt database snapshot 2026-01-16
+<li>Time Zone Database update, tzdata2026a and php-timezonedb-2026.1
 </li>
-<li>Time Zone Database update, tzdata2025c and php-timezonedb-2025.3
+<li>Asterisk 18.26.4, backport applicable security fixes from Asterisk 20.20.1: CVE-2026-57188, CVE-2026-57189,
+CVE-2026-57198, CVE-2026-57194, CVE-2026-57195, CVE-2026-57199
 </li>
-<li>Asterisk '18se' (stable edition) version 18.26.4 is the last Asterisk 18.x "Legacy" version,
+<li>Asterisk 20.20.1, pjsip version bump to 2.17
+</li>
+<li>Asterisk 'ast18se-firmware-1.x' is the last Asterisk 18.x "Legacy" version,
 built --without-pjproject and --without-dahdi
+</li>
+<li>Asterisk 'ast20-firmware-1.x' is the current Asterisk 20.x version,
+built --with-pjproject and --with-dahdi
 </li>
 </ul>
 
